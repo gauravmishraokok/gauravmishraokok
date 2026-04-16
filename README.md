@@ -1,9 +1,9 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=slice&height=320&text=GAURAV%20MISHRA&fontSize=72&rotate=0&fontAlign=50&fontAlignY=42&color=0:000000,50:001a00,100:000000&fontColor=00ff9c&desc=%3E%20Engineer%20%7C%20Researcher%20%7C%20Builder&descFontSize=20&descAlign=50&descAlignY=65&descFontColor=00ff9c&animation=fadeIn&stroke=00ff9c&strokeWidth=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=300&text=GAURAV%20MISHRA&fontSize=70&fontAlignY=42&color=000000&fontColor=00ff9c&desc=%3E%20Engineer%20%7C%20Researcher%20%7C%20Builder&descFontSize=20&descAlignY=62&animation=matrix&stroke=00ff9c&strokeWidth=1" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=1700&pause=1&color=00FF9C&background=00000000&center=true&vCenter=true&multiline=true&repeat=false&width=920&height=200&lines=%3E%20Initializing...;%3E%206x%20National%20Hackathon%20Champion%20%7C%202x%20International%20Finalist;%3E%202x%20Research%20(Published)%20%7C%20AI%20%2B%20Systems%20Engineering;%3E%20Architected%20real-world%20full-stack%20systems%20at%20scale;%3E%20Building%20Agentic%20AI%20%26%20Autonomous%20systems;%3E%Designing%20systems%20to%20solve%20real-world%20problems" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=1700&pause=1&color=00FF9C&background=00000000&center=true&vCenter=true&multiline=true&repeat=false&width=920&height=200&lines=%3E%20Initializing...;%3E%206x%20National%20Hackathon%20Champion%20%7C%202x%20International%20Finalist;%3E%202x%20Research%20(Published)%20%7C%20AI%20%2B%20Systems%20Engineering;%3E%20Architected%20Real-World%20Full-Stack%20systems%20at%20Scale;%3E%20Building%20Agentic%20AI%20%26%20Autonomous%20systems;%3E%20Designing%20systems%20to%20solve%20real-world%20problems" />
 
 <br/><br/>
 
