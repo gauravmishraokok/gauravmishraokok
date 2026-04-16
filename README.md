@@ -26,53 +26,12 @@
 </p>
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
----
+<br>
+<img src="assets/aboutme.png" width="100%"/>
 
-## ⚡ About Me
 
-<table>
-<tr>
-<td width="54%" valign="top">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-### Who Am I?
-
-Second-year CS undergrad at **MS Ramaiah Institute of Technology** (CGPA: **9.33**) who has already shipped production systems to real users — including the **Ministry of Education of India**.
-
-I research, compete, and build. Two peer-reviewed papers (IEEE + arXiv), four hackathon wins out of seven competitions, and a full-stack internship at **Foxyn AI** where I pushed through **100K+ records/month** in prod. Next stop: **Fidelity Investments** this summer.
-
-My edge is velocity with precision. I won a national hackathon in under 24 hours, built a RAG platform cutting policy review time by **99.5%**, and ranked **Top 50 globally** at IBM TechXchange.
-
-<br/>
-
-![Visitors](https://komarev.com/ghpvc/?username=gauravmishraokok&color=6366F1&style=flat-square&label=PROFILE+VIEWS)
-
-</td>
-<td width="46%" valign="top">
-
-```yaml
-┌─────────────────────────────────────┐
-│          GAURAV MISHRA              │
-├─────────────────────────────────────┤
-│  📍  Bangalore, India               │
-│  🎓  B.E. CS @ MSRIT  [2027]        │
-│  📊  CGPA : 9.33 / 10.00            │
-├─────────────────────────────────────┤
-│  🏢  SWE Intern  →  Foxyn AI        │
-│  🏦  Incoming    →  Fidelity [2026] │
-├─────────────────────────────────────┤
-│  📄  Papers Published  :  2         │
-│  🏆  Hackathon Wins    :  4         │
-│  🔢  Records / Month   :  100K+     │
-│  ⚙️  Production Uptime :  99.3%     │
-│  ⚡  Efficiency Gained :  60–99%    │
-└─────────────────────────────────────┘
-```
-
-</td>
-</tr>
-</table>
-
----
 
 ## 💼 Professional Experience
 
