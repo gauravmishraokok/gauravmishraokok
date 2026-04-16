@@ -10,12 +10,22 @@
 <br/><br/>
 <br/><br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gauravmishraokok)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/gauravmishraokok)
-[![Email](https://img.shields.io/badge/Email-Say%20Hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gauravmishraokok@gmail.com)
-[![GitHub](https://img.shields.io/github/followers/gauravmishraokok?style=for-the-badge&logo=github&label=Follow&color=181717)](https://github.com/gauravmishraokok)
+<p align="center">
+  <a href="https://linkedin.com/in/gauravmishraokok">
+  <img src="https://img.shields.io/badge/LinkedIn-000000?style=flat-square"/>
+</a>
+  <a href="https://leetcode.com/gauravmishraokok">
+    <img src="https://img.shields.io/badge/LeetCode-000000?style=flat-square&logo=leetcode&logoColor=FFA116"/>
+  </a>
+  <a href="mailto:gauravmishraokok@gmail.com">
+    <img src="https://img.shields.io/badge/Email-000000?style=flat-square&logo=gmail&logoColor=EA4335"/>
+  </a>
+  <a href="https://github.com/gauravmishraokok">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=00FFC6"/>
+  </a>
+</p>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=1&duration=2000&pause=0&color=00FFC6&background=00000000&center=true&vCenter=true&width=1000&height=5&lines=████████████████████████████████████████████████████████████████████████████" width="100%">
 
 </div>
 
