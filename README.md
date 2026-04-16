@@ -11,17 +11,28 @@
 <br/><br/>
 
 <p align="center">
-  <a href="https://linkedin.com/in/gauravmishraokok">
-  <img src="https://img.shields.io/badge/LinkedIn-000000?style=flat-square"/>
-</a>
-  <a href="https://leetcode.com/gauravmishraokok">
-    <img src="https://img.shields.io/badge/LeetCode-000000?style=flat-square&logo=leetcode&logoColor=FFA116"/>
+  <a href="https://linkedin.com/in/gauravmishraokok" style="text-decoration:none;">
+    <span style="border:1px solid #0A66C2; padding:10px 18px; color:#0A66C2;">
+      LINKEDIN
+    </span>
   </a>
-  <a href="mailto:gauravmishraokok@gmail.com">
-    <img src="https://img.shields.io/badge/Email-000000?style=flat-square&logo=gmail&logoColor=EA4335"/>
+  &nbsp;
+  <a href="https://leetcode.com/gauravmishraokok" style="text-decoration:none;">
+    <span style="border:1px solid #FFA116; padding:10px 18px; color:#FFA116;">
+      LEETCODE
+    </span>
   </a>
-  <a href="https://github.com/gauravmishraokok">
-    <img src="https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=00FFC6"/>
+  &nbsp;
+  <a href="mailto:gauravmishraokok@gmail.com" style="text-decoration:none;">
+    <span style="border:1px solid #EA4335; padding:10px 18px; color:#EA4335;">
+      EMAIL
+    </span>
+  </a>
+  &nbsp;
+  <a href="https://github.com/gauravmishraokok" style="text-decoration:none;">
+    <span style="border:1px solid #00FFC6; padding:10px 18px; color:#00FFC6;">
+      GITHUB
+    </span>
   </a>
 </p>
 
