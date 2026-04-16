@@ -1,6 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=300&text=GAURAV%20MISHRA&fontSize=70&fontAlignY=42&color=000000&fontColor=00ff9c&desc=%3E%20Engineer%20%7C%20Researcher%20%7C%20Builder&descFontSize=20&descAlignY=62&animation=matrix&stroke=00ff9c&strokeWidth=1" width="100%"/>
-
+<img src="./banner.gif" width="100%" />
 <br/>
 
 <img 
