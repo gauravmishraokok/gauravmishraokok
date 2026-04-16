@@ -11,34 +11,20 @@
 <br/><br/>
 
 <p align="center">
-  <a href="https://linkedin.com/in/gauravmishraokok" style="text-decoration:none;">
-    <span style="border:1px solid #0A66C2; padding:10px 18px; color:#0A66C2;">
-      LINKEDIN
-    </span>
+  <a href="https://linkedin.com/in/gauravmishraokok">
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/linkedin.PNG" height="60"/>
   </a>
-  &nbsp;
-  <a href="https://leetcode.com/gauravmishraokok" style="text-decoration:none;">
-    <span style="border:1px solid #FFA116; padding:10px 18px; color:#FFA116;">
-      LEETCODE
-    </span>
+  <a href="https://leetcode.com/gauravmishraokok">
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/leetcode.PNG" height="60"/>
   </a>
-  &nbsp;
-  <a href="mailto:gauravmishraokok@gmail.com" style="text-decoration:none;">
-    <span style="border:1px solid #EA4335; padding:10px 18px; color:#EA4335;">
-      EMAIL
-    </span>
+  <a href="mailto:gauravmishraokok@gmail.com">
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/gmail.PNG" height="60"/>
   </a>
-  &nbsp;
-  <a href="https://github.com/gauravmishraokok" style="text-decoration:none;">
-    <span style="border:1px solid #00FFC6; padding:10px 18px; color:#00FFC6;">
-      GITHUB
-    </span>
+  <a href="https://github.com/gauravmishraokok">
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/github.PNG" height="60"/>
   </a>
 </p>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=1&duration=2000&pause=0&color=00FFC6&background=00000000&center=true&vCenter=true&width=1000&height=5&lines=████████████████████████████████████████████████████████████████████████████" width="100%">
-
-</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 ---
 
