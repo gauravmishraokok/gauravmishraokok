@@ -1,25 +1,67 @@
+<!-- ===================== HERO ===================== -->
 
-
-<!--
-**gauravmishraokok/gauravmishraokok** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-<h1 align="center">Hi 👋, I'm Gaurav Mishra</h1>
-<h3 align="center">A student</h3>
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:00F7FF,100:2c5364&height=220&section=header&text=GAURAV%20MISHRA&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=AI%20Systems%20%7C%20Real-World%20Impact&descAlignY=70"/>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+<br>
+
+<!-- ===================== ANIMATED CONTROL PANEL ===================== -->
+
+<p align="center">
+<svg width="720" height="320" viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    .glow { stroke: #00F7FF; stroke-width: 2; fill: none; opacity: 0.7; }
+    .card { fill: #111826; stroke: #00F7FF; stroke-width: 1; rx: 10; }
+    .title { fill: #00F7FF; font-family: monospace; font-size: 14px; }
+    .text { fill: #a8b3cf; font-family: monospace; font-size: 12px; }
+    .sub { fill: #6ee7ff; font-family: monospace; font-size: 11px; }
+  </style>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="720" height="320" rx="18" fill="#0b0f14"/>
+
+  <!-- Animated border -->
+  <rect x="2" y="2" width="716" height="316" rx="18" class="glow">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <text x="360" y="40" text-anchor="middle" fill="#00F7FF" font-size="20" font-family="monospace">
+    AI SYSTEM CONTROL PANEL
+  </text>
+
+  <!-- Cards -->
+  <rect x="30" y="80" width="300" height="90" class="card"/>
+  <text x="50" y="110" class="title">Farmer AI</text>
+  <text x="50" y="135" class="text">Multimodal • Running</text>
+  <text x="50" y="155" class="sub">Crop Diagnosis System</text>
+
+  <rect x="380" y="80" width="300" height="90" class="card"/>
+  <text x="400" y="110" class="title">Vendee</text>
+  <text x="400" y="135" class="text">Live • Marketplace AI</text>
+  <text x="400" y="155" class="sub">Vendor Discovery Engine</text>
+
+  <rect x="30" y="210" width="300" height="90" class="card"/>
+  <text x="50" y="240" class="title">LLM Research</text>
+  <text x="50" y="265" class="text">Experimenting</text>
+  <text x="50" y="285" class="sub">Topic Modeling Systems</text>
+
+  <rect x="380" y="210" width="300" height="90" class="card"/>
+  <text x="400" y="240" class="title">Agent Systems</text>
+  <text x="400" y="265" class="text">Building</text>
+  <text x="400" y="285" class="sub">Multimodal Pipelines</text>
+
+</svg>
+</p>
+
+<br>
+
+<!-- ===================== FOOTER ===================== -->
+
+## 📊 ACTIVITY
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
+</p>
