@@ -12,22 +12,19 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/gauravmishraokok">
-    <img src="https://raw.githubusercontent.com/gauravmishraokok/assets/main/linkedin.png" height="60"/>
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/linkedin.PNG" height="60"/>
   </a>
   <a href="https://leetcode.com/gauravmishraokok">
-    <img src="https://raw.githubusercontent.com/gauravmishraokok/assets/main/leetcode.png" height="60"/>
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/leetcode.PNG" height="60"/>
   </a>
   <a href="mailto:gauravmishraokok@gmail.com">
-    <img src="https://raw.githubusercontent.com/gauravmishraokok/assets/main/email.png" height="60"/>
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/gmail.PNG" height="60"/>
   </a>
   <a href="https://github.com/gauravmishraokok">
-    <img src="https://raw.githubusercontent.com/gauravmishraokok/assets/main/github.png" height="60"/>
+    <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/github.PNG" height="60"/>
   </a>
 </p>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=1&duration=2000&pause=0&color=00FFC6&background=00000000&center=true&vCenter=true&width=1000&height=5&lines=████████████████████████████████████████████████████████████████████████████" width="100%">
-
-</div>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 ---
 
