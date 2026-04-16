@@ -4,69 +4,160 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=100&lines=Gaurav+Mishra;Software+Engineer+%7C+AI+Enthusiast" alt="Typing SVG" />
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gauravmishraokok)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Solve-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/gauravmishraokok)
-[![Email](https://img.shields.io/badge/Email-Reach%20Out-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gauravmishraokok@gmail.com)
-[![GitHub](https://img.shields.io/github/followers/gauravmishraokok?style=for-the-badge&logo=github&label=Follow&color=181717)](https://github.com/gauravmishraokok)
+<br/>
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+<a href="https://linkedin.com/in/gauravmishraokok"><img src="https://img.shields.io/badge/%E2%9C%A6_LinkedIn-Connect-0D1117?style=for-the-badge&logo=linkedin&logoColor=6366F1&labelColor=0D1117&color=0D1117" /></a>
+<a href="https://leetcode.com/gauravmishraokok"><img src="https://img.shields.io/badge/%E2%9C%A6_LeetCode-Solve-0D1117?style=for-the-badge&logo=leetcode&logoColor=6366F1&labelColor=0D1117&color=0D1117" /></a>
+<a href="mailto:gauravmishraokok@gmail.com"><img src="https://img.shields.io/badge/%E2%9C%A6_Email-Reach_Out-0D1117?style=for-the-badge&logo=gmail&logoColor=6366F1&labelColor=0D1117&color=0D1117" /></a>
+<a href="https://github.com/gauravmishraokok"><img src="https://img.shields.io/github/followers/gauravmishraokok?style=for-the-badge&logo=github&label=%E2%9C%A6%20Follow&color=0D1117&labelColor=0D1117&logoColor=6366F1" /></a>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=venom&color=6366F1&height=200&section=header&text=&fontSize=0&animation=twinkling">
+  <img src="https://capsule-render.vercel.app/api?type=venom&color=6366F1&height=200&section=header&text=&fontSize=0&animation=twinkling" width="100%"/>
+</picture>
 
 </div>
 
 ---
 
-## 🎯 About Me
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│   ██████╗  █████╗ ██╗   ██╗██████╗  █████╗ ██╗   ██╗                      │
+│  ██╔════╝ ██╔══██╗██║   ██║██╔══██╗██╔══██╗██║   ██║                      │
+│  ██║  ███╗███████║██║   ██║██████╔╝███████║██║   ██║                      │
+│  ██║   ██║██╔══██║██║   ██║██╔══██╗██╔══██║╚██╗ ██╔╝                      │
+│  ╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║ ╚████╔╝                       │
+│   ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝                       │
+│                                                                             │
+│              M I S H R A    ·    E N G I N E E R    ·    B U I L D E R     │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+---
+
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> About Me
+
+<img align="right" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="380" />
 
 > *Building intelligent systems that bridge the gap between cutting-edge AI and real-world impact*
 
-I'm a **Computer Science Engineer** passionate about creating scalable software solutions and pushing the boundaries of artificial intelligence. Currently architecting full-stack systems at **Foxyn AI** while pursuing my B.E. at **M.S. Ramaiah Institute of Technology** with a **9.33 CGPA**.
+I'm a **Computer Science Engineer** passionate about creating scalable software solutions and pushing the boundaries of artificial intelligence. Currently incoming **Summer Analyst at Fidelity Investments** and previously architected full-stack systems at **Foxyn AI** — all while pursuing my B.E. at **M.S. Ramaiah Institute of Technology** with a **9.33 CGPA**.
 
 ```javascript
 const gaurav = {
     location: "Bangalore, India 🇮🇳",
     role: "Software Engineer | AI Researcher",
     education: "B.E. Computer Science (Expected 2027)",
-    currentFocus: ["Full-Stack Development", "Machine Learning", "System Design"],
+    currentFocus: [
+        "Full-Stack Development",
+        "Machine Learning",
+        "System Design"
+    ],
     achievements: {
-        hackathons: ["🥈 SIH 2025 Grand Finalist (2nd/500+ teams)", 
-                     "🌍 Top 50 Globally - IBM TechXchange",
-                     "🥈 Code Carnage National (2nd/300+ teams)"],
-        publications: ["IEEE - Optimization Techniques", 
-                       "arXiv - LLM Thematic Analysis with BERTopic"],
-        impact: "Processing 100K+ records/month | Deployed by Ministry of Education"
+        hackathons: [
+            "🥈 SIH 2025 Grand Finalist (2nd/500+)",
+            "🌍 Top 50 Globally - IBM TechXchange",
+            "🥈 Code Carnage National (2nd/300+)"
+        ],
+        publications: [
+            "IEEE - Optimization Techniques",
+            "arXiv - LLM Thematic Analysis"
+        ],
+        impact: "100K+ records/month | Ministry of Education"
     },
-    passion: "Solving real-world problems through elegant code and intelligent systems"
+    funFact: "I turn caffeine into production-ready code ☕"
 };
 ```
 
+<br clear="right"/>
+
 ---
 
-## 💼 Professional Experience
+## 💼 Professional Journey
+
+<div align="center">
+
+```mermaid
+gantt
+    title Career Timeline
+    dateFormat  YYYY-MM
+    axisFormat  %b %Y
+    
+    section Fidelity Investments
+    Summer Analyst (Upcoming)       :active, fidelity, 2025-05, 2025-07
+    
+    section Foxyn AI
+    Full-Stack SWE Intern           :done, foxyn, 2024-12, 2025-04
+    
+    section Research
+    IEEE Publication                :done, ieee, 2024-06, 2024-12
+    arXiv Publication               :done, arxiv, 2024-08, 2025-01
+    
+    section Education
+    B.E. CS @ MSRIT (9.33 CGPA)    :active, edu, 2023-08, 2027-06
+```
+
+</div>
+
+<br/>
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🏢 **Foxyn AI**
-**Software Engineering Intern - Full-Stack**  
-*Dec 2025 - April 2026 | Bangalore*
+<div align="center">
+
+### <img src="https://img.shields.io/badge/UPCOMING-6366F1?style=flat-square" /> Fidelity Investments
+
+**Summer Analyst**
+*May 2025 - July 2025 | Bangalore*
+
+</div>
+
+<br/>
+
+```
+╔══════════════════════════════════════╗
+║  🏦  FIDELITY INVESTMENTS           ║
+║  ──────────────────────────────────  ║
+║  Role: Summer Analyst                ║
+║  Duration: May - July 2025          ║
+║  Status: ⏳ Incoming                 ║
+║                                      ║
+║  Focus Areas:                        ║
+║  ├─ Financial Technology             ║
+║  ├─ Software Engineering             ║
+║  └─ Enterprise Systems               ║
+╚══════════════════════════════════════╝
+```
+
+</td>
+<td width="50%" valign="top">
+
+<div align="center">
+
+### <img src="https://img.shields.io/badge/COMPLETED-10B981?style=flat-square" /> Foxyn AI
+
+**Software Engineering Intern — Full-Stack**
+*Dec 2024 - April 2025 | Bangalore*
+
+</div>
+
+<br/>
 
 - 🏗️ Architected secure ERP & data digitization systems processing **100K+ bilingual records/month**
 - ⚡ Eliminated **60% of manual processing bottlenecks** through RESTful API design
 - 🚀 Delivered full-stack portals with **~99.3% uptime** and **40% faster turnaround**
 - 💰 Drove **5-8% revenue margin increase** for government clients
-
-</td>
-<td width="50%">
-
-### 🎓 **Research & Innovation**
-**AI/ML Research**  
-*Ongoing*
-
-- 📚 Published **2 research papers** (IEEE & arXiv)
-- 🤖 Pioneered **Self-Rewarding Language Model** concepts
-- 🔬 Developed LLM evaluation frameworks improving accuracy by **35%**
-- 🏆 Deployed solutions by **Ministry of Education**
+- 🔐 Implemented role-based access control & audit logging
 
 </td>
 </tr>
@@ -78,33 +169,84 @@ const gaurav = {
 
 <div align="center">
 
-### Languages
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+<img src="https://skillicons.dev/icons?i=cpp,python,javascript,java,c,react,nodejs,express,tailwind,pytorch,tensorflow,docker,nginx,mongodb,mysql,git,linux,vscode&perline=9" />
 
-### Frontend & Backend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<br/><br/>
 
-### AI/ML & Data Science
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Transformers](https://img.shields.io/badge/🤗_Transformers-FFD21E?style=for-the-badge)
+<table>
+<tr>
+<td align="center" width="25%">
 
-### DevOps & Cloud
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+**⚡ Languages**
+
+</td>
+<td align="center" width="25%">
+
+**🎨 Frontend & Backend**
+
+</td>
+<td align="center" width="25%">
+
+**🧠 AI/ML & Data**
+
+</td>
+<td align="center" width="25%">
+
+**☁️ DevOps & Cloud**
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+`C++` `Python` `JavaScript`
+`Java` `C` `R` `SQL`
+
+</td>
+<td align="center">
+
+`React` `Node.js` `Express`
+`TailwindCSS` `REST APIs`
+
+</td>
+<td align="center">
+
+`PyTorch` `TensorFlow`
+`scikit-learn` `🤗 Transformers`
+`BERTopic` `Pinecone`
+
+</td>
+<td align="center">
+
+`Docker` `Nginx` `MongoDB`
+`MySQL` `Git` `Linux`
+`Elasticsearch`
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+```
+                    ┌──────────────────────────────────────────────┐
+                    │          PROFICIENCY MATRIX                   │
+                    ├──────────────────────────────────────────────┤
+                    │                                              │
+                    │  C++ / Python      ████████████████████ 95%  │
+                    │  JavaScript        ██████████████████░░ 90%  │
+                    │  React / Node.js   ██████████████████░░ 88%  │
+                    │  PyTorch / TF      ████████████████░░░░ 85%  │
+                    │  System Design     ████████████████░░░░ 82%  │
+                    │  Docker / DevOps   ██████████████░░░░░░ 78%  │
+                    │  Java              ██████████████░░░░░░ 75%  │
+                    │                                              │
+                    └──────────────────────────────────────────────┘
+```
 
 </div>
 
@@ -112,63 +254,142 @@ const gaurav = {
 
 ## 🏆 Featured Projects
 
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=header" width="100%"/>
+
+</div>
+
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🧠 **DataSutra - Decision Intelligence Engine**
-[![GitHub](https://img.shields.io/badge/View_Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
+<div align="center">
 
-**Tech:** Python, React, MongoDB, Pinecone, Elasticsearch
+### 🧠 DataSutra — Decision Intelligence Engine
 
-🎯 **Impact:** Deployed by Ministry of Education | 2nd at SIH 2025
+[![GitHub](https://img.shields.io/badge/Source_Code-0D1117?style=for-the-badge&logo=github&logoColor=6366F1)](https://github.com/gauravmishraokok)
 
-- Automated analysis of **10,000+ policy documents**
-- **35%+ accuracy boost** with Self-Rewarding LLM
-- **99.5% time reduction** (4+ hours → <60 seconds)
-- Explainable AI with verifiable citation mapping
+</div>
+
+```
+┌────────────────────────────────────┐
+│  🏛️  Deployed by Ministry of       │
+│     Education, Govt. of India      │
+│  🥈  2nd Place — SIH 2025         │
+│     (500+ teams nationally)        │
+└────────────────────────────────────┘
+```
+
+**Stack:** `Python` `React` `MongoDB` `Pinecone` `Elasticsearch`
+
+- 📄 Automated analysis of **10,000+ policy documents**
+- 🎯 **35%+ accuracy boost** with Self-Rewarding LLM architecture
+- ⚡ **99.5% time reduction** — 4+ hours → <60 seconds
+- 🔍 Explainable AI with verifiable citation mapping
+- 🏗️ RAG pipeline with hybrid semantic + keyword search
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 💰 **ZeroDa - AI-Powered Expense Tracker**
-[![GitHub](https://img.shields.io/badge/View_Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok) [![Demo](https://img.shields.io/badge/Live_Demo-4285F4?style=flat-square&logo=google-chrome)](https://github.com/gauravmishraokok)
+<div align="center">
 
-**Tech:** MERN Stack, NLP, Gemini API
+### 💰 ZeroDa — AI-Powered Expense Tracker
 
-- **98% categorization accuracy** with automated UPI/SMS parsing
-- **25% improvement** in budget management through AI forecasting
-- **99.7% reduction** in manual entry via bulk sync (50 transactions)
+[![GitHub](https://img.shields.io/badge/Source_Code-0D1117?style=for-the-badge&logo=github&logoColor=6366F1)](https://github.com/gauravmishraokok) [![Demo](https://img.shields.io/badge/Live_Demo-0D1117?style=for-the-badge&logo=googlechrome&logoColor=6366F1)](https://github.com/gauravmishraokok)
+
+</div>
+
+```
+┌────────────────────────────────────┐
+│  🤖  NLP-Powered Auto-Parsing     │
+│  📊  AI Budget Forecasting        │
+│  ⚡  Bulk Sync — 50 txns/click    │
+└────────────────────────────────────┘
+```
+
+**Stack:** `MERN` `NLP` `Gemini API` `TailwindCSS`
+
+- 🎯 **98% categorization accuracy** with automated UPI/SMS parsing
+- 📈 **25% improvement** in budget management via AI forecasting
+- ⚡ **99.7% reduction** in manual entry through bulk sync
+- 🔔 Smart alerts & spending pattern recognition
 
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 📊 **Topic Modeling & LLM Evaluation**
-[![GitHub](https://img.shields.io/badge/View_Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok) [![Paper](https://img.shields.io/badge/arXiv-Paper-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org)
+<div align="center">
 
-**Tech:** BERTopic, MiniLM, UMAP, HDBSCAN
+### 📊 Topic Modeling & LLM Evaluation
 
-- Clustered **1M+ prompts** for LLM performance benchmarking
-- Published peer-reviewed research on RLHF methodologies
-- Established metrics for **15+ semantic categories**
+[![GitHub](https://img.shields.io/badge/Source_Code-0D1117?style=for-the-badge&logo=github&logoColor=6366F1)](https://github.com/gauravmishraokok) [![Paper](https://img.shields.io/badge/arXiv_Paper-0D1117?style=for-the-badge&logo=arxiv&logoColor=6366F1)](https://arxiv.org/abs/2510.07557)
+
+</div>
+
+```
+┌────────────────────────────────────┐
+│  📚  Published on arXiv            │
+│  🔬  1M+ Prompts Analyzed         │
+│  📏  15+ Semantic Categories       │
+└────────────────────────────────────┘
+```
+
+**Stack:** `BERTopic` `MiniLM` `UMAP` `HDBSCAN` `Python`
+
+- 🗂️ Clustered **1M+ prompts** for LLM performance benchmarking
+- 📝 Published peer-reviewed research on RLHF methodologies
+- 📊 Established evaluation metrics for **15+ semantic categories**
+- 🔄 Novel pipeline for unsupervised thematic analysis
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🏥 **VaidyaCare - Healthcare Platform**
-[![GitHub](https://img.shields.io/badge/View_Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
+<div align="center">
 
-**Achievement:** 🥈 2nd Place at Code Carnage (300+ teams)
+### 🏥 VaidyaCare — Healthcare Platform
 
-- Built in **<24 hours** during national hackathon
-- Integrated telemedicine and health monitoring
-- Real-time patient-doctor communication system
+[![GitHub](https://img.shields.io/badge/Source_Code-0D1117?style=for-the-badge&logo=github&logoColor=6366F1)](https://github.com/gauravmishraokok)
+
+</div>
+
+```
+┌────────────────────────────────────┐
+│  🥈  2nd Place — Code Carnage     │
+│     (300+ teams nationally)        │
+│  ⏱️  Built in < 24 Hours          │
+└────────────────────────────────────┘
+```
+
+**Stack:** `MERN` `WebRTC` `Socket.io` `TailwindCSS`
+
+- 🏆 National hackathon winner — built under extreme time pressure
+- 📹 Integrated telemedicine with real-time video consultations
+- 💊 Health monitoring dashboard with vitals tracking
+- 💬 Real-time patient-doctor communication system
 
 </td>
 </tr>
 </table>
+
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                   ║
+║    📊 CUMULATIVE PROJECT IMPACT                                                   ║
+║    ─────────────────────────────                                                  ║
+║                                                                                   ║
+║    🔹 10,000+ Policy Documents Analyzed    🔹 100K+ Records Processed/Month      ║
+║    🔹 99.5% Time Reduction Achieved        🔹 35%+ Accuracy Improvements          ║
+║    🔹 3 National Hackathon Wins            🔹 2 Research Publications              ║
+║    🔹 Deployed by Government of India      🔹 1M+ Data Points Clustered           ║
+║                                                                                   ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
 
 ---
 
@@ -176,15 +397,12 @@ const gaurav = {
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=gauravmishraokok&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=FFFFFF" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=gauravmishraokok&theme=radical&hide_border=true&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api?username=gauravmishraokok&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=FFFFFF&ring_color=6366F1" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=gauravmishraokok&theme=radical&hide_border=true&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1&sideLabels=FFFFFF&dates=888888" width="49%" />
 
-</div>
-
-<div align="center">
+<br/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gauravmishraokok&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&text_color=FFFFFF&langs_count=10" width="49%" />
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gauravmishraokok&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6366F1&line=6366F1&point=FFFFFF" width="49%" />
 
 </div>
 
@@ -194,13 +412,60 @@ const gaurav = {
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gauravmishraokok&theme=radical)
 
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gauravmishraokok&theme=radical" width="32%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gauravmishraokok&theme=radical" width="32%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=gauravmishraokok&theme=radical&utcOffset=5.5" width="32%" />
+
 </div>
 
 ### 📈 3D Contribution Graph
 
 <div align="center">
 
-![](https://github-readme-activity-graph.vercel.app/graph?username=gauravmishraokok&bg_color=0D1117&color=6366F1&line=6366F1&point=FFFFFF&area=true&hide_border=true)
+> **⚙️ Setup Required:** To enable the 3D contribution graph below, add the [GitHub Profile 3D Contrib](https://github.com/yoshi389111/github-profile-3d-contrib) GitHub Action to your repository. Create `.github/workflows/profile-3d.yml` with the workflow from that repo, then the image below will auto-generate.
+
+![](./profile-3d-contrib/profile-night-rainbow.svg)
+
+</div>
+
+<details>
+<summary><b>🔧 Click to see GitHub Action setup for 3D Contribution Graph</b></summary>
+
+Create `.github/workflows/profile-3d.yml` in your profile repository:
+
+```yaml
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    - cron: "0 18 * * *"  # Runs daily at midnight IST
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: gauravmishraokok
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "generated 3d contrib" && git push)
+```
+
+This will generate multiple themes in `./profile-3d-contrib/` — use `profile-night-rainbow.svg` for the best look with this README theme.
+
+</details>
+
+<br/>
+
+<div align="center">
 
 <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 
@@ -212,9 +477,7 @@ const gaurav = {
 
 <div align="center">
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/gauravmishraokok?theme=dark&font=Noto%20Sans&ext=heatmap)
-
-<img src="https://leetcode-stats-six.vercel.app/?username=gauravmishraokok&theme=dark" alt="LeetCode Stats"/>
+![LeetCode Stats](https://leetcard.jacoblin.cool/gauravmishraokok?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=10)
 
 </div>
 
@@ -224,15 +487,31 @@ const gaurav = {
 
 <div align="center">
 
-| 🏆 Achievement | 📅 Year | 🎯 Impact |
-|:---|:---:|:---|
-| **SIH 2025 Grand Finalist** | 2025 | 🥈 2nd out of 500+ teams nationally - Deployed by Ministry of Education |
-| **IBM TechXchange Hackathon** | 2025 | 🌍 Top 50 Globally - Won IBM conference ticket to USA |
-| **Code Carnage National** | 2025 | 🥈 2nd out of 300+ teams - Built VaidyaCare in <24 hours |
-| **Axiom State Hackathon** | 2025 | 🥉 3rd out of 100+ teams - Anti-phishing detection system |
-| **Amazon ML Challenge** | 2025 | 📊 Ranked 947/24,000+ teams in real-world ML competition |
-| **IEEE Publication** | 2024 | 📚 Co-authored: Optimization Techniques in Electronics |
-| **arXiv Publication** | 2024 | 🔬 Co-authored: LLM Thematic Analysis with BERTopic |
+```
+    ╔══════════════════════════════════════════════════════════════════════════╗
+    ║                        🏆  HALL OF ACHIEVEMENTS  🏆                     ║
+    ╠══════════════════════════════════════════════════════════════════════════╣
+    ║                                                                          ║
+    ║   🥈 SIH 2025 Grand Finalist                                           ║
+    ║      └─ 2nd out of 500+ teams · Deployed by Ministry of Education       ║
+    ║                                                                          ║
+    ║   🌍 IBM TechXchange Hackathon                                          ║
+    ║      └─ Top 50 Globally · Won IBM conference ticket to USA              ║
+    ║                                                                          ║
+    ║   🥈 Code Carnage National Hackathon                                    ║
+    ║      └─ 2nd out of 300+ teams · Built VaidyaCare in <24 hours           ║
+    ║                                                                          ║
+    ║   🥉 Axiom State Hackathon                                              ║
+    ║      └─ 3rd out of 100+ teams · Anti-phishing detection system          ║
+    ║                                                                          ║
+    ║   📊 Amazon ML Challenge                                                ║
+    ║      └─ Ranked 947 / 24,000+ teams in real-world ML competition         ║
+    ║                                                                          ║
+    ║   📚 2 Research Publications (IEEE + arXiv)                             ║
+    ║      └─ Co-authored papers on optimization & LLM thematic analysis      ║
+    ║                                                                          ║
+    ╚══════════════════════════════════════════════════════════════════════════╝
+```
 
 </div>
 
@@ -242,24 +521,58 @@ const gaurav = {
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 📄 **IEEE Conference Paper**
+<div align="center">
+
+### 📄 IEEE Conference Paper
+
+[![IEEE](https://img.shields.io/badge/Read_on_IEEE_Xplore-0D1117?style=for-the-badge&logo=ieee&logoColor=6366F1)](https://ieeexplore.ieee.org/document/10985323)
+
+</div>
+
+<br/>
+
 **Optimization Techniques in Electronics: Advances, Challenges, and Future Directions**
 
-*Co-author* | Published 2024
+*Co-author* · Published 2024
 
-Exploring cutting-edge optimization methodologies in modern electronics systems and their practical applications.
+```
+📌 Key Contributions:
+├─ Survey of cutting-edge optimization
+│  methodologies in electronics
+├─ Comparative analysis of modern
+│  vs classical approaches
+└─ Practical application frameworks
+   for industry adoption
+```
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 📄 **arXiv Research Paper**
+<div align="center">
+
+### 📄 arXiv Research Paper
+
+[![arXiv](https://img.shields.io/badge/Read_on_arXiv-0D1117?style=for-the-badge&logo=arxiv&logoColor=6366F1)](https://arxiv.org/abs/2510.07557)
+
+</div>
+
+<br/>
+
 **Investigating Thematic Patterns and User Preferences in LLM Interactions using BERTopic**
 
-*Co-author* | Published 2024
+*Co-author* · Published 2024
 
-Novel approach to understanding LLM alignment through unsupervised topic modeling and RLHF research.
+```
+📌 Key Contributions:
+├─ Novel unsupervised topic modeling
+│  pipeline for LLM alignment
+├─ Analysis of 1M+ user prompts
+│  across 15+ semantic categories
+└─ Insights for RLHF and
+   preference optimization
+```
 
 </td>
 </tr>
@@ -267,47 +580,86 @@ Novel approach to understanding LLM alignment through unsupervised topic modelin
 
 ---
 
-## 💡 What Drives Me
+## 💡 Philosophy & Vision
 
 <div align="center">
 
-```ascii
-╔═══════════════════════════════════════════════════════════════════════╗
-║                                                                       ║
-║  "I don't just write code—I architect solutions that matter.         ║
-║   Every project is an opportunity to blend elegant engineering       ║
-║   with tangible impact, whether it's processing 100K+ records        ║
-║   for government systems or reducing policy review time by 99.5%.    ║
-║                                                                       ║
-║   My passion lies at the intersection of AI, full-stack              ║
-║   development, and system design—creating intelligent systems        ║
-║   that solve real-world problems at scale."                          ║
-║                                                                       ║
-╚═══════════════════════════════════════════════════════════════════════╝
+```
+    ┌─────────────────────────────────────────────────────────────────────────┐
+    │                                                                         │
+    │    "I don't just write code — I architect solutions that matter.        │
+    │                                                                         │
+    │     Every project is an opportunity to blend elegant engineering        │
+    │     with tangible impact, whether it's processing 100K+ records        │
+    │     for government systems or reducing policy review time by 99.5%.    │
+    │                                                                         │
+    │     My passion lies at the intersection of AI, full-stack              │
+    │     development, and system design — creating intelligent systems      │
+    │     that solve real-world problems at scale."                          │
+    │                                                                         │
+    │                                              — Gaurav Mishra           │
+    │                                                                         │
+    └─────────────────────────────────────────────────────────────────────────┘
 ```
 
 </div>
 
-### 🎯 Current Focus Areas
+<br/>
 
 <table>
 <tr>
-<td width="33%" align="center">
+<td width="33%" align="center" valign="top">
 
-### 🤖 AI/ML Innovation
-Building Self-Rewarding Language Models and RAG systems that push the boundaries of intelligent automation
+```
+    ┌──────────────┐
+    │   🤖  AI/ML  │
+    │  INNOVATION  │
+    └──────┬───────┘
+           │
+    ┌──────┴───────┐
+    │ Self-Rewarding│
+    │ LLMs · RAG   │
+    │ Systems ·    │
+    │ Intelligent  │
+    │ Automation   │
+    └──────────────┘
+```
 
 </td>
-<td width="33%" align="center">
+<td width="33%" align="center" valign="top">
 
-### 🏗️ System Architecture
-Designing scalable distributed systems that handle 100K+ transactions with 99%+ uptime
+```
+    ┌──────────────┐
+    │  🏗️ SYSTEM   │
+    │ ARCHITECTURE │
+    └──────┬───────┘
+           │
+    ┌──────┴───────┐
+    │ Scalable     │
+    │ Distributed  │
+    │ Systems ·    │
+    │ 100K+ TPS ·  │
+    │ 99%+ Uptime  │
+    └──────────────┘
+```
 
 </td>
-<td width="33%" align="center">
+<td width="33%" align="center" valign="top">
 
-### 🚀 Real-World Impact
-Deploying solutions that reduce manual work by 60-99% and get adopted by government ministries
+```
+    ┌──────────────┐
+    │  🚀 REAL     │
+    │ WORLD IMPACT │
+    └──────┬───────┘
+           │
+    ┌──────┴───────┐
+    │ 60-99% Work  │
+    │ Reduction ·  │
+    │ Government   │
+    │ Adoption ·   │
+    │ Published    │
+    └──────────────┘
+```
 
 </td>
 </tr>
@@ -319,19 +671,30 @@ Deploying solutions that reduce manual work by 60-99% and get adopted by governm
 
 <div align="center">
 
-### 💼 Open to opportunities in:
-**Full-Stack Development** • **Machine Learning Engineering** • **AI Research** • **System Design**
+```
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   💼  OPEN TO OPPORTUNITIES IN:                               ║
+║                                                               ║
+║   ▸ Full-Stack Development    ▸ Machine Learning Engineering  ║
+║   ▸ AI Research               ▸ System Design                 ║
+║   ▸ Software Engineering      ▸ Backend Engineering           ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+```
 
-<br>
+<br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5)](https://linkedin.com/in/gauravmishraokok)
-[![Email](https://img.shields.io/badge/Email-gauravmishraokok@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=EA4335)](mailto:gauravmishraokok@gmail.com)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Solve_Together-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=FFA116)](https://leetcode.com/gauravmishraokok)
-[![Phone](https://img.shields.io/badge/Phone-+91_8762349500-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=25D366)](tel:+918762349500)
+<a href="https://linkedin.com/in/gauravmishraokok"><img src="https://img.shields.io/badge/LinkedIn-Let's_Connect-0D1117?style=for-the-badge&logo=linkedin&logoColor=6366F1&labelColor=0D1117" /></a>
+<a href="mailto:gauravmishraokok@gmail.com"><img src="https://img.shields.io/badge/Email-gauravmishraokok@gmail.com-0D1117?style=for-the-badge&logo=gmail&logoColor=6366F1&labelColor=0D1117" /></a>
+<a href="https://leetcode.com/gauravmishraokok"><img src="https://img.shields.io/badge/LeetCode-Solve_Together-0D1117?style=for-the-badge&logo=leetcode&logoColor=6366F1&labelColor=0D1117" /></a>
+<a href="tel:+918762349500"><img src="https://img.shields.io/badge/Phone-+91_8762349500-0D1117?style=for-the-badge&logo=whatsapp&logoColor=6366F1&labelColor=0D1117" /></a>
 
-<br>
+<br/><br/>
 
 ### 💬 Let's build something extraordinary together!
+
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&text=Thanks%20for%20visiting!&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=72" width="100%"/>
 
@@ -341,22 +704,16 @@ Deploying solutions that reduce manual work by 60-99% and get adopted by governm
 
 <div align="center">
 
-### 📊 Profile Views
-
 ![](https://komarev.com/ghpvc/?username=gauravmishraokok&color=6366F1&style=for-the-badge&label=PROFILE+VIEWS)
 
-### ⭐ Show some love!
+<br/>
 
-If you find my work interesting, consider giving my repositories a ⭐ and let's connect!
+### ⭐ If you find my work interesting, consider giving my repositories a ⭐ and let's connect!
 
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
+<br/>
 
-</div>
+**`💻 Built with passion, deployed with purpose | 2025 © Gaurav Mishra`**
 
----
-
-<div align="center">
-
-**💻 Built with passion, deployed with purpose | 2025 © Gaurav Mishra**
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&section=footer" width="100%"/>
 
 </div>
