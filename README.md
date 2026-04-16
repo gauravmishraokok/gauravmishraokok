@@ -49,7 +49,7 @@ const gaurav = {
 
 ### 🏢 **Foxyn AI**
 **Software Engineering Intern - Full-Stack**  
-*Dec 2025 - Present | Bangalore*
+*Dec 2025 - April 2026 | Bangalore*
 
 - 🏗️ Architected secure ERP & data digitization systems processing **100K+ bilingual records/month**
 - ⚡ Eliminated **60% of manual processing bottlenecks** through RESTful API design
