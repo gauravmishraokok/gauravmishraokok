@@ -1,10 +1,9 @@
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=slice&height=280&text=Gaurav%20Mishra&fontSize=78&rotate=13&fontAlign=72&fontAlignY=47&color=0:0f0c29,40:302b63,100:1a1a2e&fontColor=ffffff&desc=Engineer%20·%20Researcher%20·%20Builder&descFontSize=20&descAlign=62&descAlignY=70&descFontColor=a5b4fc&stroke=6366F1&strokeWidth=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=slice&height=320&text=GAURAV%20MISHRA&fontSize=72&rotate=0&fontAlign=50&fontAlignY=42&color=0:000000,50:001a00,100:000000&fontColor=00ff9c&desc=%3E%20Engineer%20%7C%20Researcher%20%7C%20Builder&descFontSize=20&descAlign=50&descAlignY=65&descFontColor=00ff9c&animation=fadeIn&stroke=00ff9c&strokeWidth=1" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2500&pause=900&color=818CF8&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=65&lines=🚀+Building+AI+systems+that+get+deployed+%E2%80%94+literally+by+ministries;🏆+4x+Hackathon+Champion+·+2x+Published+Researcher+·+99.5%25+efficiency+gains;⚡+100K%2B+records%2Fmonth+in+prod+·+Top+50+Globally+@+IBM+TechXchange" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=1700&pause=1&color=00FF9C&background=00000000&center=true&vCenter=true&multiline=true&repeat=false&width=920&height=200&lines=%3E%20Initializing...;%3E%206x%20National%20Hackathon%20Champion%20%7C%202x%20International%20Finalist;%3E%202x%20Research%20(Published)%20%7C%20AI%20%2B%20Systems%20Engineering;%3E%20Architected%20real-world%20full-stack%20systems%20at%20scale;%3E%20Building%20Agentic%20AI%20%26%20Autonomous%20systems;%3E%Designing%20systems%20to%20solve%20real-world%20problems" />
 
 <br/><br/>
 
