@@ -33,68 +33,10 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
-## 💼 Professional Experience
+<img src="assets/workexperience.png" width="100%"/>
 
-<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   2024 ──────────────── 2025 ─────────────────── 2026 ──────────────▶
-        │  Research & ML  │    Foxyn AI (SWE)    │  Fidelity (SWE)  │
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-</div>
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### 🔬 Research & Innovation
-**AI/ML Research**
-*2024 – 2025*
-
-- 📚 Published **2** peer-reviewed papers (IEEE + arXiv)
-- 🤖 Pioneered **Self-Rewarding Language Model** evaluation concepts
-- 📐 Built LLM eval frameworks → **+35% factual accuracy**
-- 🏛️ Solutions deployed by **Ministry of Education, India**
-
-</td>
-<td width="33%" valign="top">
-
-### 🏢 Foxyn AI
-**Software Engineering Intern — Full Stack**
-*Dec 2025 – April 2026 · Bangalore*
-
-- 🏗️ Architected ERP & data digitization systems: **100K+ bilingual records/month**
-- ⚡ Eliminated **60% manual bottlenecks** via RESTful APIs
-- 🚀 Delivered customer portals with **~99.3% uptime** and **40% faster** turnaround
-- 💰 Contributed to **5–8% revenue margin increase** for government clients
-
-</td>
-<td width="33%" valign="top">
-
-### 🏦 Fidelity Investments
-**Software Engineering Intern**
-*May 2026 – July 2026*
-
-<br/>
-
-<div align="center">
-
-![Upcoming](https://img.shields.io/badge/🚀_STATUS-INCOMING-6366F1?style=for-the-badge&labelColor=1e1b4b)
-
-</div>
-
-<br/>
-
-Summer internship at one of the world's largest financial services firms. Bringing full-stack and AI systems thinking to fintech at scale.
-
-</td>
-</tr>
-</table>
-
----
 
 ## 🛠️ Tech Arsenal
 
