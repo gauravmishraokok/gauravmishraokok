@@ -268,7 +268,7 @@ End-to-end telemedicine platform with real-time patient–doctor communication, 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%"/>
+<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%"/>
 
 </div>
 
