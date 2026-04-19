@@ -87,44 +87,12 @@
 
 ---
 
-## 📝 Research & Publications
+<div align="center" style="width:1000px; margin:auto; line-height:0;">
 
-<table>
-<tr>
-<td width="50%" valign="top">
+  <img src="assets/ieee-paper.png" width="50%" style="display:inline-block;" />
+  <img src="assets/arxiv-paper.png" width="50%" style="display:inline-block;" />
 
-### 📄 IEEE Conference Paper
-
-**Optimization Techniques in Electronics: Advances, Challenges, and Future Directions**
-
-*Co-author* · Published 2024
-
-Explores cutting-edge optimization methodologies in modern electronics systems and their practical applications in high-performance computing contexts.
-
-<br/>
-
-[![IEEE](https://img.shields.io/badge/Read%20on-IEEE%20Xplore-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/10985323)
-
-</td>
-<td width="50%" valign="top">
-
-### 📄 arXiv Research Paper
-
-**Investigating Thematic Patterns and User Preferences in LLM Interactions using BERTopic**
-
-*Co-author* · Published 2024
-
-Novel approach to understanding LLM alignment through unsupervised topic modeling. Establishes data-driven methodologies for RLHF and human preference mapping at scale.
-
-<br/>
-
-[![arXiv](https://img.shields.io/badge/Read%20on-arXiv-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.07557)
-
-</td>
-</tr>
-</table>
-
----
+</div>
 
 ## 💡 What Drives Me
 
