@@ -56,8 +56,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-## 🧩 LeetCode Statistics
-
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/assets/leetcode.svg" alt="LeetCode Stats" />
