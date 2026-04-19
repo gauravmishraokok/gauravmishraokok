@@ -40,13 +40,21 @@ async function fetchLeetCodeData() {
     const contestData = await contestRes.json();
     
     if (contestData) {
+      // Aggressively check all possible JSON keys the API might be using
+      const attendedCount = contestData.contestAttend 
+                         ?? contestData.attendedContestsCount 
+                         ?? contestData.contestParticipationNum 
+                         ?? (contestData.userContestRanking && contestData.userContestRanking.attendedContestsCount) 
+                         ?? "0";
+
       contest = {
         rating: contestData.contestRating ? Math.round(contestData.contestRating) : "N/A",
         ranking: contestData.contestGlobalRanking || "N/A",
-        attended: contestData.contestParticipationNum || "0",
+        attended: attendedCount,
         top: contestData.contestTopPercentage ? `${contestData.contestTopPercentage}%` : "N/A"
       };
     }
+    
   } catch (e) {
     console.error("Failed to fetch calendar/contest:", e.message);
   }
