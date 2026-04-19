@@ -7,7 +7,6 @@
   width="100%"
   style="filter: drop-shadow(0 0 6px #00FFC6) drop-shadow(0 0 12px #00FFC6);"
 />
-<br/><br/>
 
 
 
@@ -30,7 +29,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-<br>
 
 
 
@@ -64,13 +62,18 @@
 
 
 <!-- ======================= GITHUB ACTIVITY ======================= -->
-<p align="center">
-  <img src="assets/github-activity-header.png" width="1000"/>
-</p>
+<div align="center" style="line-height:0;">
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" width="100%"/>
-</p>
+  <!-- HEADER -->
+  <img src="assets/github-activity-header.png" width="100%" style="display:block;" />
+
+  <!-- GRAPH -->
+  <img 
+    src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" 
+    width="100%" 
+    style="display:block; margin-top:-2px;" 
+  />
+
 </div>
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
@@ -94,18 +97,20 @@
 
 
 <!-- ======================= RESEARCH ======================= -->
+<div align="center" style="line-height:0;">
 <p align="center">
   <img src="assets/research-header.png" width="100%" style="margin-bottom:20px;" />
 </p>
 
 <p align="center">
-  <a href="https://ieeexplore.ieee.org/document/10985323">
+  <a href="https://ieeexplore.ieee.org/document/10985323" target="_blank" rel="noopener noreferrer">
     <img src="assets/ieee-paper.png" width="49%" />
   </a>
   <a href="https://arxiv.org/abs/2510.07557">
     <img src="assets/arxiv-paper.png" width="49%" />
   </a>
 </p>
+<div/>
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
