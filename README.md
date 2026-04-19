@@ -60,7 +60,7 @@
 
 <div align="center">
 
-<img src="assets/leetcode.svg" width="100%" />
+<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/assets/leetcode.svg" alt="LeetCode Stats" />
 
 </div>
 

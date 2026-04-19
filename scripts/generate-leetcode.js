@@ -6,6 +6,7 @@ const username = "gauravmishraokok";
 async function fetchLeetCodeData() {
   let stats = { total: "-", easy: "-", medium: "-", hard: "-" };
   let calendarObj = null;
+  let contest = { rating: "-", ranking: "-", attended: "-", top: "-" };
 
   console.log("Fetching Stats from Vercel Edge API...");
   try {
@@ -22,8 +23,9 @@ async function fetchLeetCodeData() {
     console.error("Failed to fetch stats:", e.message);
   }
 
-  console.log("Fetching Calendar from Alfa API...");
+  console.log("Fetching Calendar & Contest from Alfa API...");
   try {
+    // Fetch Calendar
     const calRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}/calendar`);
     const calData = await calRes.json();
 
@@ -32,14 +34,27 @@ async function fetchLeetCodeData() {
         ? JSON.parse(calData.submissionCalendar) 
         : calData.submissionCalendar;
     }
+
+    // Fetch Contest
+    const contestRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}/contest`);
+    const contestData = await contestRes.json();
+    
+    if (contestData) {
+      contest = {
+        rating: contestData.contestRating ? Math.round(contestData.contestRating) : "N/A",
+        ranking: contestData.contestGlobalRanking || "N/A",
+        attended: contestData.contestParticipationNum || "0",
+        top: contestData.contestTopPercentage ? `${contestData.contestTopPercentage}%` : "N/A"
+      };
+    }
   } catch (e) {
-    console.error("Failed to fetch calendar:", e.message);
+    console.error("Failed to fetch calendar/contest:", e.message);
   }
 
-  return { ...stats, calendar: calendarObj };
+  return { ...stats, calendar: calendarObj, contest };
 }
 
-/* ---------- HEATMAP ---------- */
+/* ---------- HEATMAP (LEETCODE STYLE) ---------- */
 function generateHeatmap(calendar) {
   let days = [];
   const SECONDS_IN_DAY = 86400;
@@ -70,19 +85,19 @@ function generateHeatmap(calendar) {
   let rects = "";
 
   days.forEach(([_, count], i) => {
-    // Using neon UI color levels for heatmap
     const color =
-      count === 0 ? "#022c22" :           // Empty (Dark Green background)
-      count < 2 ? "#065f46" :             // Subtle 
+      count === 0 ? "#022c22" :           // Empty (Dark Green)
+      count < 2 ? "#065f46" :             // Subtle
       count < 5 ? "#10b981" :             // Mid
-      "#00FFC6";                          // Primary Emphasis (High activity)
+      "#00FFC6";                          // Primary
 
-    rects += `<rect x="${x}" y="${y}" width="8" height="8" rx="1" fill="${color}" />\n`;
+    // 11x11 squares with 2px border radius, jumping by 15px (creates a 4px gap)
+    rects += `<rect x="${x}" y="${y}" width="11" height="11" rx="2" fill="${color}" />\n`;
 
-    y += 10;
+    y += 15;
     if ((i + 1) % 7 === 0) {
       y = 0;
-      x += 10;
+      x += 15;
     }
   });
 
@@ -94,9 +109,9 @@ async function main() {
   const data = await fetchLeetCodeData();
   const heatmap = generateHeatmap(data.calendar);
 
-  // Box-in-box SVG layout with Neon UI Hierarchy
+  // Expanded height to 460 to accommodate the 50/50 split and spaced-out grid
   const svg = `
-<svg width="1000" height="420" viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="460" viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg">
 
 <style>
   /* FONT */
@@ -112,46 +127,65 @@ async function main() {
   .subtitle { font-size: 12px; letter-spacing: 1px; }
   .section-label { font-size: 14px; letter-spacing: 2px; }
   .stat-label { font-size: 12px; letter-spacing: 1px; }
-  .stat-value { font-size: 18px; letter-spacing: 1px; }
+  .stat-value { font-size: 20px; letter-spacing: 1px; }
   
   /* BOX STYLES */
-  .bg { fill: #0A0A0E; } /* Deep terminal background */
+  .bg { fill: #0A0A0E; }
   .box-outer { stroke: #00FFC6; stroke-width: 2; fill: none; }
   .box-inner { stroke: #00FFC6; stroke-width: 1; fill: none; stroke-opacity: 0.4; }
   .box-subtle { stroke: #00FFC6; stroke-width: 1; fill: none; stroke-opacity: 0.2; }
 </style>
 
-<rect width="1000" height="420" class="bg" rx="10"/>
+<rect width="1000" height="460" class="bg" rx="10"/>
 
-<rect x="10" y="10" width="980" height="400" class="box-outer" rx="6"/>
-<rect x="16" y="16" width="968" height="388" class="box-inner" rx="4"/>
+<rect x="10" y="10" width="980" height="440" class="box-outer" rx="6"/>
+<rect x="16" y="16" width="968" height="428" class="box-inner" rx="4"/>
 
 <text x="40" y="55" class="font primary title">LEETCODE SYSTEM</text>
 <text x="40" y="75" class="font secondary subtitle">Algorithmic Problem Solving Engine</text>
 
-<rect x="40" y="100" width="920" height="120" class="box-inner" rx="4"/>
-<text x="55" y="125" class="font primary section-label">PERFORMANCE METRICS</text>
+<rect x="40" y="100" width="440" height="140" class="box-inner" rx="4"/>
+<text x="55" y="125" class="font primary section-label">PROBLEM SOLVING</text>
 
-<rect x="55" y="140" width="180" height="60" class="box-subtle" rx="2"/>
-<text x="70" y="165" class="font secondary stat-label">TOTAL SOLVED</text>
-<text x="70" y="188" class="font tertiary stat-value">${data.total}</text>
+<rect x="55" y="140" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="65" y="165" class="font secondary stat-label">TOTAL</text>
+<text x="120" y="166" class="font tertiary stat-value">${data.total}</text>
 
-<rect x="250" y="140" width="180" height="60" class="box-subtle" rx="2"/>
-<text x="265" y="165" class="font secondary stat-label">EASY</text>
-<text x="265" y="188" class="font tertiary stat-value">${data.easy}</text>
+<rect x="265" y="140" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="275" y="165" class="font secondary stat-label">EASY</text>
+<text x="320" y="166" class="font tertiary stat-value">${data.easy}</text>
 
-<rect x="445" y="140" width="180" height="60" class="box-subtle" rx="2"/>
-<text x="460" y="165" class="font secondary stat-label">MEDIUM</text>
-<text x="460" y="188" class="font tertiary stat-value">${data.medium}</text>
+<rect x="55" y="185" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="65" y="210" class="font secondary stat-label">MEDIUM</text>
+<text x="120" y="211" class="font tertiary stat-value">${data.medium}</text>
 
-<rect x="640" y="140" width="180" height="60" class="box-subtle" rx="2"/>
-<text x="655" y="165" class="font secondary stat-label">HARD</text>
-<text x="655" y="188" class="font tertiary stat-value">${data.hard}</text>
+<rect x="265" y="185" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="275" y="210" class="font secondary stat-label">HARD</text>
+<text x="320" y="211" class="font tertiary stat-value">${data.hard}</text>
 
-<rect x="40" y="240" width="920" height="140" class="box-inner" rx="4"/>
-<text x="55" y="265" class="font primary section-label">ACTIVITY MATRIX (LAST 365 DAYS)</text>
+<rect x="520" y="100" width="440" height="140" class="box-inner" rx="4"/>
+<text x="535" y="125" class="font primary section-label">CONTEST METRICS</text>
 
-<g transform="translate(55, 285)">
+<rect x="535" y="140" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="545" y="165" class="font secondary stat-label">RATING</text>
+<text x="610" y="166" class="font tertiary stat-value">${data.contest.rating}</text>
+
+<rect x="745" y="140" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="755" y="165" class="font secondary stat-label">RANK</text>
+<text x="800" y="166" class="font tertiary stat-value">${data.contest.ranking}</text>
+
+<rect x="535" y="185" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="545" y="210" class="font secondary stat-label">ATTENDED</text>
+<text x="620" y="211" class="font tertiary stat-value">${data.contest.attended}</text>
+
+<rect x="745" y="185" width="195" height="40" class="box-subtle" rx="2"/>
+<text x="755" y="210" class="font secondary stat-label">TOP %</text>
+<text x="810" y="211" class="font tertiary stat-value">${data.contest.top}</text>
+
+<rect x="40" y="260" width="920" height="165" class="box-inner" rx="4"/>
+<text x="55" y="285" class="font primary section-label">ACTIVITY MATRIX (LAST 365 DAYS)</text>
+
+<g transform="translate(60, 305)">
   ${heatmap}
 </g>
 
