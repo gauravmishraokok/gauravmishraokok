@@ -12,10 +12,10 @@
 </defs>
 
 <style>
-.title { font-family: monospace; font-size: 20px; fill: #00FFC6; }
-.subtitle { font-size: 12px; fill: #85FFC4; }
-.stat { font-size: 14px; fill: #00FFC6; }
-.label { font-size: 10px; fill: #85FFC4; }
+.title { font-family: 'Courier New', monospace; font-size: 20px; fill: #00FFC6; letter-spacing: 2px; }
+.subtitle { font-family: 'Courier New', monospace; font-size: 12px; fill: #85FFC4; }
+.stat { font-family: 'Courier New', monospace; font-size: 14px; fill: #00FFC6; }
+.label { font-family: 'Courier New', monospace; font-size: 10px; fill: #85FFC4; }
 .box { fill: none; stroke: #00FFC6; stroke-width: 1; filter: url(#glow); }
 </style>
 
@@ -32,16 +32,16 @@
 <!-- STATS -->
 <rect x="40" y="100" width="400" height="80" class="box"/>
 
-<text x="60" y="130" class="stat">TOTAL: 0</text>
+<text x="60" y="130" class="stat">TOTAL: 487</text>
 
 <text x="60" y="155" class="label">EASY</text>
-<text x="110" y="155" class="stat">0</text>
+<text x="110" y="155" class="stat">167</text>
 
 <text x="180" y="155" class="label">MEDIUM</text>
-<text x="260" y="155" class="stat">0</text>
+<text x="260" y="155" class="stat">274</text>
 
 <text x="350" y="155" class="label">HARD</text>
-<text x="410" y="155" class="stat">0</text>
+<text x="410" y="155" class="stat">46</text>
 
 <!-- HEATMAP -->
 <rect x="40" y="200" width="920" height="110" class="box"/>
