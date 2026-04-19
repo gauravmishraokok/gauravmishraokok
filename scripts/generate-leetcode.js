@@ -4,54 +4,39 @@ const username = "gauravmishraokok";
 
 /* ---------- ROBUST DATA FETCHING ---------- */
 async function fetchLeetCodeData() {
+  let stats = { total: "-", easy: "-", medium: "-", hard: "-" };
+  let calendarObj = null;
+
+  console.log("Fetching Stats from Vercel Edge API...");
   try {
-    // Attempt 1: LeetCode Stats API (Usually returns everything in one call)
-    console.log("Attempt 1: Fetching from leetcode-stats-api...");
-    const res = await fetch(`https://leetcode-stats-api.herokuapp.com/${username}`);
-    const data = await res.json();
+    const statsRes = await fetch(`https://leetcode-api-faisalshohag.vercel.app/${username}`);
+    const statsData = await statsRes.json();
     
-    if (data.status === "success") {
-       return {
-         total: data.totalSolved || "-",
-         easy: data.easySolved || "-",
-         medium: data.mediumSolved || "-",
-         hard: data.hardSolved || "-",
-         // Ensure calendar is parsed properly whether it arrives as a string or object
-         calendar: typeof data.submissionCalendar === 'string' 
-            ? JSON.parse(data.submissionCalendar) 
-            : data.submissionCalendar
-       };
-    }
-    throw new Error("Primary API failed or returned an error status.");
+    stats = {
+      total: statsData.totalSolved ?? "-",
+      easy: statsData.easySolved ?? "-",
+      medium: statsData.mediumSolved ?? "-",
+      hard: statsData.hardSolved ?? "-"
+    };
   } catch (e) {
-    console.log("Primary API failed. Attempt 2: Fetching from Alfa API...");
-    try {
-      // Attempt 2: Alfa LeetCode API (Requires two separate endpoint calls)
-      const statsRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}`);
-      const stats = await statsRes.json();
-      
-      const calRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}/calendar`);
-      const cal = await calRes.json();
-      
-      let calendarObj = null;
-      if (cal && cal.submissionCalendar) {
-         calendarObj = typeof cal.submissionCalendar === 'string' 
-            ? JSON.parse(cal.submissionCalendar) 
-            : cal.submissionCalendar;
-      }
-      
-      return {
-        total: stats.totalSolved || "-",
-        easy: stats.easySolved || "-",
-        medium: stats.mediumSolved || "-",
-        hard: stats.hardSolved || "-",
-        calendar: calendarObj
-      };
-    } catch (err) {
-      console.error("All APIs failed to retrieve data.");
-      return { total: "-", easy: "-", medium: "-", hard: "-", calendar: null };
-    }
+    console.error("Failed to fetch stats:", e.message);
   }
+
+  console.log("Fetching Calendar from Alfa API...");
+  try {
+    const calRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}/calendar`);
+    const calData = await calRes.json();
+
+    if (calData && calData.submissionCalendar) {
+      calendarObj = typeof calData.submissionCalendar === 'string' 
+        ? JSON.parse(calData.submissionCalendar) 
+        : calData.submissionCalendar;
+    }
+  } catch (e) {
+    console.error("Failed to fetch calendar:", e.message);
+  }
+
+  return { ...stats, calendar: calendarObj };
 }
 
 /* ---------- HEATMAP ---------- */
@@ -60,30 +45,24 @@ function generateHeatmap(calendar) {
   const SECONDS_IN_DAY = 86400;
 
   if (calendar && Object.keys(calendar).length > 0) {
-    // 1. Normalize the LeetCode calendar by exact Date String (YYYY-MM-DD)
     const normalizedCalendar = {};
     for (const [timestamp, count] of Object.entries(calendar)) {
-      // LeetCode keys are in seconds, JS Date needs milliseconds
       const date = new Date(parseInt(timestamp) * 1000);
       const dateString = date.toISOString().split('T')[0];
       normalizedCalendar[dateString] = (normalizedCalendar[dateString] || 0) + count;
     }
 
-    // 2. Generate an array of the last 364 days ending exactly today
     const now = new Date();
-    // Start 363 days ago to get exactly 52 weeks (364 days)
     let current = new Date(now.getTime() - (363 * SECONDS_IN_DAY * 1000));
 
     for (let i = 0; i < 364; i++) {
       const dateString = current.toISOString().split('T')[0];
       const count = normalizedCalendar[dateString] || 0;
       days.push([dateString, count]);
-      
-      // Move forward one day
       current.setDate(current.getDate() + 1);
     }
   } else {
-    console.log("No valid calendar data found. Generating fake fallback heatmap.");
+    // FAKE HEATMAP (fallback)
     days = Array.from({ length: 364 }, () => [null, Math.floor(Math.random() * 4)]);
   }
 
@@ -91,17 +70,16 @@ function generateHeatmap(calendar) {
   let rects = "";
 
   days.forEach(([_, count], i) => {
+    // Using neon UI color levels for heatmap
     const color =
-      count === 0 ? "#022c22" :
-      count < 2 ? "#065f46" :
-      count < 5 ? "#10b981" :
-      "#00FFC6";
+      count === 0 ? "#022c22" :           // Empty (Dark Green background)
+      count < 2 ? "#065f46" :             // Subtle 
+      count < 5 ? "#10b981" :             // Mid
+      "#00FFC6";                          // Primary Emphasis (High activity)
 
     rects += `<rect x="${x}" y="${y}" width="8" height="8" rx="1" fill="${color}" />\n`;
 
     y += 10;
-    
-    // Every 7 days, wrap to the top of the next column
     if ((i + 1) % 7 === 0) {
       y = 0;
       x += 10;
@@ -116,93 +94,76 @@ async function main() {
   const data = await fetchLeetCodeData();
   const heatmap = generateHeatmap(data.calendar);
 
+  // Box-in-box SVG layout with Neon UI Hierarchy
   const svg = `
-<svg width="1000" height="340" viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg">
-
-<defs>
-  <filter id="glow">
-    <feGaussianBlur stdDeviation="3" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-</defs>
+<svg width="1000" height="420" viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg">
 
 <style>
-.title {
-  font-family: 'Courier New', 'Lucida Console', monospace;
-  font-size: 20px;
-  fill: #00FFC6;
-  letter-spacing: 3px;
-}
-
-.subtitle {
-  font-family: 'Courier New', 'Lucida Console', monospace;
-  font-size: 12px;
-  fill: #85FFC4;
-  letter-spacing: 1px;
-}
-
-.stat {
-  font-family: 'Courier New', 'Lucida Console', monospace;
-  font-size: 14px;
-  fill: #00FFC6;
-  letter-spacing: 1px;
-}
-
-.label {
-  font-family: 'Courier New', 'Lucida Console', monospace;
-  font-size: 10px;
-  fill: #85FFC4;
-}
-
-.box {
-  fill: #0d1117;
-  stroke: #00FFC6;
-  stroke-width: 1px;
-  stroke-opacity: 0.3;
-  rx: 8px;
-}
+  /* FONT */
+  .font { font-family: 'Courier New', 'Lucida Console', Monaco, monospace; }
+  
+  /* NEON UI COLOR SYSTEM */
+  .primary { fill: #00FFC6; font-weight: bold; }
+  .secondary { fill: #aafad3; }
+  .tertiary { fill: #72a7fc; font-weight: bold; }
+  
+  /* TEXT SIZES */
+  .title { font-size: 22px; letter-spacing: 2px; }
+  .subtitle { font-size: 12px; letter-spacing: 1px; }
+  .section-label { font-size: 14px; letter-spacing: 2px; }
+  .stat-label { font-size: 12px; letter-spacing: 1px; }
+  .stat-value { font-size: 18px; letter-spacing: 1px; }
+  
+  /* BOX STYLES */
+  .bg { fill: #0A0A0E; } /* Deep terminal background */
+  .box-outer { stroke: #00FFC6; stroke-width: 2; fill: none; }
+  .box-inner { stroke: #00FFC6; stroke-width: 1; fill: none; stroke-opacity: 0.4; }
+  .box-subtle { stroke: #00FFC6; stroke-width: 1; fill: none; stroke-opacity: 0.2; }
 </style>
 
-<rect x="10" y="10" width="980" height="320" class="box"/>
+<rect width="1000" height="420" class="bg" rx="10"/>
 
-<rect x="20" y="20" width="960" height="300" stroke="#00FFC6" stroke-opacity="0.3" fill="none" rx="6"/>
+<rect x="10" y="10" width="980" height="400" class="box-outer" rx="6"/>
+<rect x="16" y="16" width="968" height="388" class="box-inner" rx="4"/>
 
-<text x="40" y="60" class="title">LEETCODE SYSTEM</text>
-<text x="40" y="80" class="subtitle">Algorithmic Problem Solving Engine</text>
+<text x="40" y="55" class="font primary title">LEETCODE SYSTEM</text>
+<text x="40" y="75" class="font secondary subtitle">Algorithmic Problem Solving Engine</text>
 
-<rect x="40" y="100" width="400" height="80" class="box"/>
+<rect x="40" y="100" width="920" height="120" class="box-inner" rx="4"/>
+<text x="55" y="125" class="font primary section-label">PERFORMANCE METRICS</text>
 
-<text x="60" y="130" class="stat">TOTAL: ${data.total}</text>
+<rect x="55" y="140" width="180" height="60" class="box-subtle" rx="2"/>
+<text x="70" y="165" class="font secondary stat-label">TOTAL SOLVED</text>
+<text x="70" y="188" class="font tertiary stat-value">${data.total}</text>
 
-<text x="60" y="155" class="label">EASY</text>
-<text x="110" y="155" class="stat">${data.easy}</text>
+<rect x="250" y="140" width="180" height="60" class="box-subtle" rx="2"/>
+<text x="265" y="165" class="font secondary stat-label">EASY</text>
+<text x="265" y="188" class="font tertiary stat-value">${data.easy}</text>
 
-<text x="180" y="155" class="label">MEDIUM</text>
-<text x="260" y="155" class="stat">${data.medium}</text>
+<rect x="445" y="140" width="180" height="60" class="box-subtle" rx="2"/>
+<text x="460" y="165" class="font secondary stat-label">MEDIUM</text>
+<text x="460" y="188" class="font tertiary stat-value">${data.medium}</text>
 
-<text x="350" y="155" class="label">HARD</text>
-<text x="410" y="155" class="stat">${data.hard}</text>
+<rect x="640" y="140" width="180" height="60" class="box-subtle" rx="2"/>
+<text x="655" y="165" class="font secondary stat-label">HARD</text>
+<text x="655" y="188" class="font tertiary stat-value">${data.hard}</text>
 
-<rect x="40" y="200" width="920" height="110" class="box"/>
-<text x="50" y="220" class="label">ACTIVITY MATRIX</text>
+<rect x="40" y="240" width="920" height="140" class="box-inner" rx="4"/>
+<text x="55" y="265" class="font primary section-label">ACTIVITY MATRIX (LAST 365 DAYS)</text>
 
-<g transform="translate(50,230)">
-${heatmap}
+<g transform="translate(55, 285)">
+  ${heatmap}
 </g>
 
 </svg>
 `;
 
-  // Ensure the assets folder exists before writing
   if (!fs.existsSync("assets")) {
     fs.mkdirSync("assets", { recursive: true });
   }
 
   fs.writeFileSync("assets/leetcode.svg", svg);
-  console.log("✅ SVG generated and saved successfully to assets/leetcode.svg");
+  console.log("✅ Custom Box-in-Box SVG updated successfully");
 }
 
 main();
