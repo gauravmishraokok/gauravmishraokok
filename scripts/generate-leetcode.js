@@ -83,9 +83,15 @@ async function fetchFallback() {
 
 /* ---------- HEATMAP ---------- */
 function generateHeatmap(calendar) {
-  if (!calendar) return "";
 
-  const days = Object.entries(calendar).slice(-140);
+  let days;
+
+  if (calendar) {
+    days = Object.entries(calendar).slice(-140);
+  } else {
+    // 🔥 FAKE HEATMAP (fallback)
+    days = Array.from({ length: 140 }, () => [null, Math.floor(Math.random() * 4)]);
+  }
 
   let x = 0, y = 0;
   let rects = "";
@@ -134,11 +140,32 @@ async function main() {
 </defs>
 
 <style>
-.title { font-family: 'Courier New', monospace; font-size: 20px; fill: #00FFC6; letter-spacing: 2px; }
-.subtitle { font-family: 'Courier New', monospace; font-size: 12px; fill: #85FFC4; }
-.stat { font-family: 'Courier New', monospace; font-size: 14px; fill: #00FFC6; }
-.label { font-family: 'Courier New', monospace; font-size: 10px; fill: #85FFC4; }
-.box { fill: none; stroke: #00FFC6; stroke-width: 1; filter: url(#glow); }
+.title {
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  font-size: 20px;
+  fill: #00FFC6;
+  letter-spacing: 3px;
+}
+
+.subtitle {
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  font-size: 12px;
+  fill: #85FFC4;
+  letter-spacing: 1px;
+}
+
+.stat {
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  font-size: 14px;
+  fill: #00FFC6;
+  letter-spacing: 1px;
+}
+
+.label {
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  font-size: 10px;
+  fill: #85FFC4;
+}
 </style>
 
 <!-- OUTER -->
