@@ -4,76 +4,80 @@ const fetch = require("node-fetch");
 const username = "gauravmishraokok";
 
 /* ---------- GRAPHQL FETCH ---------- */
-async function fetchGraphQL() {
-  try {
-    const query = {
-      query: `
-      query getUserProfile($username: String!) {
-        matchedUser(username: $username) {
-          submitStats {
-            acSubmissionNum {
-              difficulty
-              count
+async function fetchGraphQL(retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const query = {
+        query: `
+        query getUserProfile($username: String!) {
+          matchedUser(username: $username) {
+            submitStats {
+              acSubmissionNum {
+                difficulty
+                count
+              }
             }
           }
+          userProfileCalendar(username: $username) {
+            submissionCalendar
+          }
         }
-        userProfileCalendar(username: $username) {
-          submissionCalendar
-        }
+        `,
+        variables: { username }
+      };
+
+      const res = await fetch("https://leetcode.com/graphql", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Referer": "https://leetcode.com",
+          "User-Agent": "Mozilla/5.0"
+        },
+        body: JSON.stringify(query)
+      });
+
+      const json = await res.json();
+
+      if (!json.data || !json.data.matchedUser) throw new Error();
+
+      const statsArr = json.data.matchedUser.submitStats.acSubmissionNum;
+      const calendar = JSON.parse(json.data.userProfileCalendar.submissionCalendar);
+
+      let total = "-", easy = "-", medium = "-", hard = "-";
+
+      statsArr.forEach(s => {
+        if (s.difficulty === "All") total = s.count;
+        if (s.difficulty === "Easy") easy = s.count;
+        if (s.difficulty === "Medium") medium = s.count;
+        if (s.difficulty === "Hard") hard = s.count;
+      });
+
+      return { total, easy, medium, hard, calendar };
+
+    } catch (e) {
+      if (i === retries - 1) {
+        console.log("GraphQL failed → fallback");
+        return null;
       }
-      `,
-      variables: { username }
-    };
-
-    const res = await fetch("https://leetcode.com/graphql", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Referer": "https://leetcode.com",
-        "User-Agent": "Mozilla/5.0"
-      },
-      body: JSON.stringify(query)
-    });
-
-    const json = await res.json();
-
-    if (!json.data || !json.data.matchedUser) throw new Error("GraphQL failed");
-
-    const statsArr = json.data.matchedUser.submitStats.acSubmissionNum;
-    const calendar = JSON.parse(json.data.userProfileCalendar.submissionCalendar);
-
-    let total = 0, easy = 0, medium = 0, hard = 0;
-
-    statsArr.forEach(s => {
-      if (s.difficulty === "All") total = s.count;
-      if (s.difficulty === "Easy") easy = s.count;
-      if (s.difficulty === "Medium") medium = s.count;
-      if (s.difficulty === "Hard") hard = s.count;
-    });
-
-    return { total, easy, medium, hard, calendar };
-
-  } catch (err) {
-    console.log("GraphQL failed → fallback");
-    return null;
+    }
   }
 }
 
-/* ---------- FALLBACK API ---------- */
+/* ---------- FALLBACK API (FIXED) ---------- */
 async function fetchFallback() {
   try {
-    const res = await fetch(`https://leetcode-stats-api.herokuapp.com/${username}`);
+    const res = await fetch(`https://leetcode-api-faisalshohag.vercel.app/${username}`);
     const data = await res.json();
 
     return {
-      total: data.totalSolved || 0,
-      easy: data.easySolved || 0,
-      medium: data.mediumSolved || 0,
-      hard: data.hardSolved || 0,
+      total: data.totalSolved || "-",
+      easy: data.easySolved || "-",
+      medium: data.mediumSolved || "-",
+      hard: data.hardSolved || "-",
       calendar: null
     };
   } catch {
-    return { total: 0, easy: 0, medium: 0, hard: 0, calendar: null };
+    return { total: "-", easy: "-", medium: "-", hard: "-", calendar: null };
   }
 }
 
@@ -130,10 +134,10 @@ async function main() {
 </defs>
 
 <style>
-.title { font-family: monospace; font-size: 20px; fill: #00FFC6; }
-.subtitle { font-size: 12px; fill: #85FFC4; }
-.stat { font-size: 14px; fill: #00FFC6; }
-.label { font-size: 10px; fill: #85FFC4; }
+.title { font-family: 'Courier New', monospace; font-size: 20px; fill: #00FFC6; letter-spacing: 2px; }
+.subtitle { font-family: 'Courier New', monospace; font-size: 12px; fill: #85FFC4; }
+.stat { font-family: 'Courier New', monospace; font-size: 14px; fill: #00FFC6; }
+.label { font-family: 'Courier New', monospace; font-size: 10px; fill: #85FFC4; }
 .box { fill: none; stroke: #00FFC6; stroke-width: 1; filter: url(#glow); }
 </style>
 
