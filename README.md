@@ -46,25 +46,15 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-
-## 📊 GitHub Analytics
-
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gauravmishraokok&bg_color=020617&color=00FFC6&line=00FFC6&point=85FFC4&hide_border=true"/>
-</div>
-
-
----
-
 ## 🌐 3D Contribution Graph
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
+<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%"/>
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 ## 🧩 LeetCode Statistics
 
@@ -74,7 +64,7 @@
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 ## 🎖️ Achievements & Recognition
 
