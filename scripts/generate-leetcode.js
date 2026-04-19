@@ -2,120 +2,88 @@ const fs = require("fs");
 
 const username = "gauravmishraokok";
 
-/* ---------- GRAPHQL FETCH ---------- */
-async function fetchGraphQL(retries = 3) {
-  for (let i = 0; i < retries; i++) {
-    try {
-      const query = {
-        query: `
-        query getUserProfile($username: String!) {
-          matchedUser(username: $username) {
-            submitStats {
-              acSubmissionNum {
-                difficulty
-                count
-              }
-            }
-          }
-          userProfileCalendar(username: $username) {
-            submissionCalendar
-          }
-        }
-        `,
-        variables: { username }
-      };
-
-      const res = await fetch("https://leetcode.com/graphql", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Referer": "https://leetcode.com",
-          "User-Agent": "Mozilla/5.0"
-        },
-        body: JSON.stringify(query)
-      });
-
-      const json = await res.json();
-
-      if (!json.data || !json.data.matchedUser) throw new Error();
-
-      const statsArr = json.data.matchedUser.submitStats.acSubmissionNum;
-      const calendar = JSON.parse(json.data.userProfileCalendar.submissionCalendar);
-
-      let total = "-", easy = "-", medium = "-", hard = "-";
-
-      statsArr.forEach(s => {
-        if (s.difficulty === "All") total = s.count;
-        if (s.difficulty === "Easy") easy = s.count;
-        if (s.difficulty === "Medium") medium = s.count;
-        if (s.difficulty === "Hard") hard = s.count;
-      });
-
-      return { total, easy, medium, hard, calendar };
-
-    } catch (e) {
-      if (i === retries - 1) {
-        console.log("GraphQL failed → fallback");
-        return null;
-      }
-    }
-  }
-}
-
-/* ---------- FALLBACK API ---------- */
-/* ---------- FALLBACK API ---------- */
-async function fetchFallback() {
+/* ---------- ROBUST DATA FETCHING ---------- */
+async function fetchLeetCodeData() {
   try {
-    console.log("GraphQL failed or blocked. Using fallback API...");
+    // Attempt 1: LeetCode Stats API (Usually returns everything in one call)
+    console.log("Attempt 1: Fetching from leetcode-stats-api...");
+    const res = await fetch(`https://leetcode-stats-api.herokuapp.com/${username}`);
+    const data = await res.json();
     
-    // 1. Fetch basic stats
-    const statsRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}`);
-    const statsData = await statsRes.json();
-
-    // 2. Fetch the calendar
-    const calRes = await fetch(`https://alfa-leetcode-api.onrender.com/userProfileCalendar/${username}`);
-    const calData = await calRes.json();
-
-    // Parse the calendar string into an object if it exists
-    let calendarObj = null;
-    if (calData && calData.submissionCalendar) {
-      calendarObj = JSON.parse(calData.submissionCalendar);
+    if (data.status === "success") {
+       return {
+         total: data.totalSolved || "-",
+         easy: data.easySolved || "-",
+         medium: data.mediumSolved || "-",
+         hard: data.hardSolved || "-",
+         // Ensure calendar is parsed properly whether it arrives as a string or object
+         calendar: typeof data.submissionCalendar === 'string' 
+            ? JSON.parse(data.submissionCalendar) 
+            : data.submissionCalendar
+       };
     }
-
-    return {
-      total: statsData.totalSolved || "-",
-      easy: statsData.easySolved || "-",
-      medium: statsData.mediumSolved || "-",
-      hard: statsData.hardSolved || "-",
-      calendar: calendarObj
-    };
+    throw new Error("Primary API failed or returned an error status.");
   } catch (e) {
-    console.error("Fallback API failed too.");
-    return { total: "-", easy: "-", medium: "-", hard: "-", calendar: null };
+    console.log("Primary API failed. Attempt 2: Fetching from Alfa API...");
+    try {
+      // Attempt 2: Alfa LeetCode API (Requires two separate endpoint calls)
+      const statsRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}`);
+      const stats = await statsRes.json();
+      
+      const calRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}/calendar`);
+      const cal = await calRes.json();
+      
+      let calendarObj = null;
+      if (cal && cal.submissionCalendar) {
+         calendarObj = typeof cal.submissionCalendar === 'string' 
+            ? JSON.parse(cal.submissionCalendar) 
+            : cal.submissionCalendar;
+      }
+      
+      return {
+        total: stats.totalSolved || "-",
+        easy: stats.easySolved || "-",
+        medium: stats.mediumSolved || "-",
+        hard: stats.hardSolved || "-",
+        calendar: calendarObj
+      };
+    } catch (err) {
+      console.error("All APIs failed to retrieve data.");
+      return { total: "-", easy: "-", medium: "-", hard: "-", calendar: null };
+    }
   }
 }
-/* ---------- HEATMAP ---------- */
+
 /* ---------- HEATMAP ---------- */
 function generateHeatmap(calendar) {
   let days = [];
+  const SECONDS_IN_DAY = 86400;
 
-  if (calendar) {
-    const SECONDS_IN_DAY = 86400;
+  if (calendar && Object.keys(calendar).length > 0) {
+    // 1. Normalize the LeetCode calendar by exact Date String (YYYY-MM-DD)
+    const normalizedCalendar = {};
+    for (const [timestamp, count] of Object.entries(calendar)) {
+      // LeetCode keys are in seconds, JS Date needs milliseconds
+      const date = new Date(parseInt(timestamp) * 1000);
+      const dateString = date.toISOString().split('T')[0];
+      normalizedCalendar[dateString] = (normalizedCalendar[dateString] || 0) + count;
+    }
+
+    // 2. Generate an array of the last 364 days ending exactly today
     const now = new Date();
-    
-    // LeetCode calculates days based on UTC midnight
-    const todayUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-    
-    // Start 363 days ago to get exactly 364 days (52 columns * 7 days) ending today
-    let currentTimestamp = Math.floor(todayUTC.getTime() / 1000) - (363 * SECONDS_IN_DAY);
+    // Start 363 days ago to get exactly 52 weeks (364 days)
+    let current = new Date(now.getTime() - (363 * SECONDS_IN_DAY * 1000));
 
     for (let i = 0; i < 364; i++) {
-      const count = calendar[currentTimestamp] || 0;
-      days.push([currentTimestamp, count]);
-      currentTimestamp += SECONDS_IN_DAY;
+      const dateString = current.toISOString().split('T')[0];
+      const count = normalizedCalendar[dateString] || 0;
+      days.push([dateString, count]);
+      
+      // Move forward one day
+      current.setDate(current.getDate() + 1);
     }
   } else {
-    // 🔥 FAKE HEATMAP (fallback)
+    console.log("No valid calendar data found. Generating fake fallback heatmap.");
     days = Array.from({ length: 364 }, () => [null, Math.floor(Math.random() * 4)]);
   }
 
@@ -132,6 +100,8 @@ function generateHeatmap(calendar) {
     rects += `<rect x="${x}" y="${y}" width="8" height="8" rx="1" fill="${color}" />\n`;
 
     y += 10;
+    
+    // Every 7 days, wrap to the top of the next column
     if ((i + 1) % 7 === 0) {
       y = 0;
       x += 10;
@@ -143,12 +113,7 @@ function generateHeatmap(calendar) {
 
 /* ---------- MAIN ---------- */
 async function main() {
-  let data = await fetchGraphQL();
-
-  if (!data) {
-    data = await fetchFallback();
-  }
-
+  const data = await fetchLeetCodeData();
   const heatmap = generateHeatmap(data.calendar);
 
   const svg = `
@@ -231,13 +196,13 @@ ${heatmap}
 </svg>
 `;
 
-  // Ensure the assets folder exists before attempting to write to it
+  // Ensure the assets folder exists before writing
   if (!fs.existsSync("assets")) {
     fs.mkdirSync("assets", { recursive: true });
   }
 
   fs.writeFileSync("assets/leetcode.svg", svg);
-  console.log("✅ SVG updated successfully");
+  console.log("✅ SVG generated and saved successfully to assets/leetcode.svg");
 }
 
 main();
