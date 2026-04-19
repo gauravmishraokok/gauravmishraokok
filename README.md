@@ -70,8 +70,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
+
+
 <div align="center" style="width:1000px; margin:auto; line-height:0;">
 
+  <!-- HEADER -->
+  <img src="assets/research-header.png" width="100%" style="display:block;" />
+
+  <!-- ROW -->
   <img src="assets/ieee-paper.png" width="50%" style="display:inline-block;" />
   <img src="assets/arxiv-paper.png" width="50%" style="display:inline-block;" />
 
