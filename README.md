@@ -1,4 +1,4 @@
-
+<!-- ======================= HERO BANNER ======================= -->
 <img src="./banner.gif" width="100%" />
 <br/>
 
@@ -10,6 +10,10 @@
 <br/><br/>
 <br/><br/>
 
+
+
+
+<!-- ======================= SOCIAL LINKS ======================= -->
 <p align="center">
   <a href="https://linkedin.com/in/gauravmishraokok">
     <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/linkedin.PNG" height="60"/>
@@ -24,29 +28,43 @@
     <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/refs/heads/main/assets/github.PNG" height="60"/>
   </a>
 </p>
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 <br>
+
+
+
+
+<!-- ======================= ABOUT ME ======================= -->
 <img src="assets/aboutme.png" width="100%"/>
-
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
+
+
+<!-- ======================= WORK EXPERIENCE ======================= -->
 <img src="assets/workexperience.png" width="100%"/>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
+
+
+<!-- ======================= TECHNICAL SKILLS ======================= -->
 <img src="assets/technicalskills.png" width="100%"/>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
+
+
+
+<!-- ======================= PROJECTS ======================= -->
 <img src="assets/projects.png" width="100%"/>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
+
+
+<!-- ======================= GITHUB ACTIVITY ======================= -->
 <p align="center">
   <img src="assets/github-activity-header.png" width="1000"/>
 </p>
@@ -54,40 +72,51 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" width="100%"/>
 </p>
-
 </div>
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
+
+
+
+<!-- ======================= LEETCODE STATS ======================= -->
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/assets/leetcode.svg" alt="LeetCode Stats" />
-
+  <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/assets/leetcode.svg" alt="LeetCode Stats" />
 </div>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
+
+
+
+<!-- ======================= ACHIEVEMENTS ======================= -->
 <img src="assets/achievements.png" width="100%"/>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
 
-<div align="center" style="width:1000px; margin:auto; line-height:0;">
 
+<!-- ======================= RESEARCH ======================= -->
+<div align="center" style="width:1000px; margin:auto; line-height:0;">
   <!-- HEADER -->
   <img src="assets/research-header.png" width="100%" style="display:block;" />
-
-  <!-- ROW -->
+  <!-- PAPERS -->
   <img src="assets/ieee-paper.png" width="50%" style="display:inline-block;" />
   <img src="assets/arxiv-paper.png" width="50%" style="display:inline-block;" />
-
 </div>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
+
+
+<!-- ======================= WHAT DRIVES ME ======================= -->
 <div align="center">
   <img src="whatdrivesme.png" width="100%" />
 </div>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
+
+
+
+<!-- ======================= END NOTE ======================= -->
 <div align="center">
   <img src="endnote.png" width="100%" />
 </div>
