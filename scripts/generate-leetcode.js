@@ -63,23 +63,37 @@ async function fetchGraphQL(retries = 3) {
 }
 
 /* ---------- FALLBACK API ---------- */
+/* ---------- FALLBACK API ---------- */
 async function fetchFallback() {
   try {
-    const res = await fetch(`https://leetcode-api-faisalshohag.vercel.app/${username}`);
-    const data = await res.json();
+    console.log("GraphQL failed or blocked. Using fallback API...");
+    
+    // 1. Fetch basic stats
+    const statsRes = await fetch(`https://alfa-leetcode-api.onrender.com/${username}`);
+    const statsData = await statsRes.json();
+
+    // 2. Fetch the calendar
+    const calRes = await fetch(`https://alfa-leetcode-api.onrender.com/userProfileCalendar/${username}`);
+    const calData = await calRes.json();
+
+    // Parse the calendar string into an object if it exists
+    let calendarObj = null;
+    if (calData && calData.submissionCalendar) {
+      calendarObj = JSON.parse(calData.submissionCalendar);
+    }
 
     return {
-      total: data.totalSolved || "-",
-      easy: data.easySolved || "-",
-      medium: data.mediumSolved || "-",
-      hard: data.hardSolved || "-",
-      calendar: null
+      total: statsData.totalSolved || "-",
+      easy: statsData.easySolved || "-",
+      medium: statsData.mediumSolved || "-",
+      hard: statsData.hardSolved || "-",
+      calendar: calendarObj
     };
-  } catch {
+  } catch (e) {
+    console.error("Fallback API failed too.");
     return { total: "-", easy: "-", medium: "-", hard: "-", calendar: null };
   }
 }
-
 /* ---------- HEATMAP ---------- */
 /* ---------- HEATMAP ---------- */
 function generateHeatmap(calendar) {
