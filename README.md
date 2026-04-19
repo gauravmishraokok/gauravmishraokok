@@ -60,7 +60,7 @@
 
 <div align="center">
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/gauravmishraokok?theme=dark&font=JetBrains+Mono&ext=heatmap)
+<img src="assets/leetcode.svg" width="100%" />
 
 </div>
 
