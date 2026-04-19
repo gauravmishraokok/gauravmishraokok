@@ -46,14 +46,16 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-## 🌐 3D Contribution Graph
 
-<div align="center">
+<p align="center">
+  <img src="assets/github-activity-header.png" width="1000"/>
+</p>
 
-<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" width="100%"/>
+</p>
 
 </div>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 <div align="center">
