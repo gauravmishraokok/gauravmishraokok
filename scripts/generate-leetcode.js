@@ -1,5 +1,4 @@
 const fs = require("fs");
-const fetch = require("node-fetch");
 
 const username = "gauravmishraokok";
 
@@ -63,7 +62,7 @@ async function fetchGraphQL(retries = 3) {
   }
 }
 
-/* ---------- FALLBACK API (FIXED) ---------- */
+/* ---------- FALLBACK API ---------- */
 async function fetchFallback() {
   try {
     const res = await fetch(`https://leetcode-api-faisalshohag.vercel.app/${username}`);
@@ -82,15 +81,28 @@ async function fetchFallback() {
 }
 
 /* ---------- HEATMAP ---------- */
+/* ---------- HEATMAP ---------- */
 function generateHeatmap(calendar) {
-
-  let days;
+  let days = [];
 
   if (calendar) {
-    days = Object.entries(calendar).slice(-140);
+    const SECONDS_IN_DAY = 86400;
+    const now = new Date();
+    
+    // LeetCode calculates days based on UTC midnight
+    const todayUTC = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+    
+    // Start 363 days ago to get exactly 364 days (52 columns * 7 days) ending today
+    let currentTimestamp = Math.floor(todayUTC.getTime() / 1000) - (363 * SECONDS_IN_DAY);
+
+    for (let i = 0; i < 364; i++) {
+      const count = calendar[currentTimestamp] || 0;
+      days.push([currentTimestamp, count]);
+      currentTimestamp += SECONDS_IN_DAY;
+    }
   } else {
     // 🔥 FAKE HEATMAP (fallback)
-    days = Array.from({ length: 140 }, () => [null, Math.floor(Math.random() * 4)]);
+    days = Array.from({ length: 364 }, () => [null, Math.floor(Math.random() * 4)]);
   }
 
   let x = 0, y = 0;
@@ -103,7 +115,7 @@ function generateHeatmap(calendar) {
       count < 5 ? "#10b981" :
       "#00FFC6";
 
-    rects += `<rect x="${x}" y="${y}" width="8" height="8" rx="1" fill="${color}" />`;
+    rects += `<rect x="${x}" y="${y}" width="8" height="8" rx="1" fill="${color}" />\n`;
 
     y += 10;
     if ((i + 1) % 7 === 0) {
@@ -117,7 +129,6 @@ function generateHeatmap(calendar) {
 
 /* ---------- MAIN ---------- */
 async function main() {
-
   let data = await fetchGraphQL();
 
   if (!data) {
@@ -166,19 +177,23 @@ async function main() {
   font-size: 10px;
   fill: #85FFC4;
 }
+
+.box {
+  fill: #0d1117;
+  stroke: #00FFC6;
+  stroke-width: 1px;
+  stroke-opacity: 0.3;
+  rx: 8px;
+}
 </style>
 
-<!-- OUTER -->
 <rect x="10" y="10" width="980" height="320" class="box"/>
 
-<!-- INNER -->
-<rect x="20" y="20" width="960" height="300" stroke="#00FFC6" stroke-opacity="0.3" fill="none"/>
+<rect x="20" y="20" width="960" height="300" stroke="#00FFC6" stroke-opacity="0.3" fill="none" rx="6"/>
 
-<!-- TITLE -->
 <text x="40" y="60" class="title">LEETCODE SYSTEM</text>
 <text x="40" y="80" class="subtitle">Algorithmic Problem Solving Engine</text>
 
-<!-- STATS -->
 <rect x="40" y="100" width="400" height="80" class="box"/>
 
 <text x="60" y="130" class="stat">TOTAL: ${data.total}</text>
@@ -192,7 +207,6 @@ async function main() {
 <text x="350" y="155" class="label">HARD</text>
 <text x="410" y="155" class="stat">${data.hard}</text>
 
-<!-- HEATMAP -->
 <rect x="40" y="200" width="920" height="110" class="box"/>
 <text x="50" y="220" class="label">ACTIVITY MATRIX</text>
 
@@ -202,6 +216,11 @@ ${heatmap}
 
 </svg>
 `;
+
+  // Ensure the assets folder exists before attempting to write to it
+  if (!fs.existsSync("assets")) {
+    fs.mkdirSync("assets", { recursive: true });
+  }
 
   fs.writeFileSync("assets/leetcode.svg", svg);
   console.log("✅ SVG updated successfully");
