@@ -66,26 +66,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-## 🎖️ Achievements & Recognition
+<img src="assets/achievements.png" width="100%"/>
 
-<div align="center">
-
-| 🏆 Achievement | 📅 Year | 🎯 Result |
-|:---|:---:|:---|
-| **SIH 2025 Grand Finalist** | 2025 | 🥈 **2nd / 500+ teams** · Deployed by Ministry of Education |
-| **IBM TechXchange Hackathon** | 2025 | 🌍 **Top 50 Globally** · Won IBM conference ticket to USA |
-| **SolarisX Hackathon** | 2026 | 🥇 **1st / 400+ teams** · Built Memora — agent memory system |
-| **Code Carnage, National** | 2025 | 🥈 **2nd / 300+ teams** · Built VaidyaCare in < 24 hours |
-| **Axiom, State Hackathon** | 2025 | 🥉 **3rd / 100+ teams** · Anti-phishing detection system |
-| **Hack-A-War Hackathon** | 2026 | 🎯 **Top 5 / 150 teams** · Built PatchOps |
-| **Kamikaze Hackathon** | 2026 | 🥇 **1st / 100+ teams** |
-| **Amazon ML Challenge 2025** | 2025 | 📊 **Ranked 947 / 24,000+ teams** · Real-world ML competition |
-| **IEEE Publication** | 2024 | 📚 Co-authored: Optimization Techniques in Electronics |
-| **arXiv Publication** | 2024 | 🔬 Co-authored: LLM Thematic Analysis with BERTopic |
-
-</div>
-
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 <div align="center" style="width:1000px; margin:auto; line-height:0;">
 
