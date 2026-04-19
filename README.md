@@ -42,97 +42,10 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-## 🏆 Featured Projects
+<img src="assets/projects.png" width="100%"/>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
-### 🧠 DataSutra — Decision Intelligence Engine
-> *🥈 SIH 2025 · 2nd / 500+ Teams Nationally · Deployed by Ministry of Education*
-
-[![GitHub](https://img.shields.io/badge/Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Elasticsearch](https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&logo=elasticsearch)
-
-Hybrid RAG platform automating analysis of **10,000+ policy documents**. Pioneered **Self-Rewarding LLM** evaluation with **35%+ accuracy boost** and **99.5% reduction** in policy review time (4+ hours → <60 seconds). Explainable AI with verifiable citation mapping.
-
-</td>
-<td width="50%" valign="top">
-
-### 🧬 Memora — Long-Running Memories for Autonomous Agents
-> *🥇 SolarisX Hackathon · 1st / 400+ Teams · 2026*
-
-[![GitHub](https://img.shields.io/badge/Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Pinecone](https://img.shields.io/badge/-Pinecone-6366F1?style=flat-square&logoColor=white)
-![LLM](https://img.shields.io/badge/-LLM_APIs-10B981?style=flat-square&logoColor=white)
-
-Persistent memory layer for autonomous AI agents enabling long-horizon reasoning across sessions. Combines vector memory banks, episodic recall, and semantic compression so agents remember context across thousands of interactions without prompt bloat.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📊 Topic Modeling & LLM Evaluation
-> *📄 Published on arXiv · Peer-Reviewed RLHF Research*
-
-[![GitHub](https://img.shields.io/badge/Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
-[![arXiv](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2510.07557)
-![BERTopic](https://img.shields.io/badge/-BERTopic-8B5CF6?style=flat-square)
-![HDBSCAN](https://img.shields.io/badge/-HDBSCAN-F59E0B?style=flat-square)
-
-Unsupervised NLP pipeline (BERTopic + MiniLM + HDBSCAN) clustering **1M+ prompts** to benchmark LLM performance across **15+ semantic categories**. Established data-driven RLHF methodologies for human preference mapping.
-
-</td>
-<td width="50%" valign="top">
-
-### 🛡️ PatchOps — Intelligent Patch Orchestration
-> *🎯 Hack-A-War Hackathon · Top 5 / 150 Teams · 2026*
-
-[![GitHub](https://img.shields.io/badge/Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
-![Ansible](https://img.shields.io/badge/-Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-
-AI-driven patch management and deployment orchestration system. Automates vulnerability detection, staged rollout planning, and rollback logic across distributed infrastructure — dramatically reducing manual ops overhead in enterprise environments.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 💰 ZeroDa — AI-Powered Expense Tracker
-> *📱 Full-Stack · 98% Categorization Accuracy*
-
-[![GitHub](https://img.shields.io/badge/Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
-[![Demo](https://img.shields.io/badge/Live_Demo-4285F4?style=flat-square&logo=google-chrome&logoColor=white)](https://github.com/gauravmishraokok)
-![MERN](https://img.shields.io/badge/-MERN-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Gemini](https://img.shields.io/badge/-Gemini_API-4285F4?style=flat-square&logo=google&logoColor=white)
-
-Full-stack expense tracker with automated UPI/SMS NLP parsing (**98% accuracy**), Gemini-powered financial forecasting (**+25% budget efficiency**), and bulk-sync of 50 transactions — cutting manual entry by **99.7%**.
-
-</td>
-<td width="50%" valign="top">
-
-### 🏥 VaidyaCare — Healthcare Platform
-> *🥈 Code Carnage National · 2nd / 300+ Teams · Built in < 24 hours*
-
-[![GitHub](https://img.shields.io/badge/Code-181717?style=flat-square&logo=github)](https://github.com/gauravmishraokok)
-![React](https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-End-to-end telemedicine platform with real-time patient–doctor communication, health monitoring dashboards, and appointment scheduling — built from zero to shipped in a single day at a national hackathon.
-
-</td>
-</tr>
-</table>
-
----
 
 ## 📊 GitHub Analytics
 
