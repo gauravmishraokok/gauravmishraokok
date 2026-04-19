@@ -3,9 +3,9 @@
 <br/>
 
 <img 
-  src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=16&duration=1700&pause=1&color=00FF9C&background=00000000&center=true&vCenter=true&multiline=true&repeat=false&width=1000&height=200&lines=%3E%20Initializing...;%3E%206x%20National%20Hackathon%20Champion%20%7C%202x%20International%20Finalist;%3E%202x%20Research%20(Published)%20%7C%20AI%20%2B%20Systems%20Engineering;%3E%20Architected%20Real-World%20Full-Stack%20systems%20at%20Scale;%3E%20Building%20Agentic%20AI%20%26%20Autonomous%20Systems;%3E%20Designing%20Systems%20to%20solve%20Real-World%20Problems" 
+  src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=16&duration=1700&pause=1&color=00FFC6&background=00000000&center=true&vCenter=true&multiline=true&repeat=false&width=1000&height=200&lines=%3E%20Initializing...;%3E%206x%20National%20Hackathon%20Champion%20%7C%202x%20International%20Finalist;%3E%202x%20Research%20(Published)%20%7C%20AI%20%2B%20Systems%20Engineering;%3E%20Architected%20Real-World%20Full-Stack%20systems%20at%20Scale;%3E%20Building%20Agentic%20AI%20%26%20Autonomous%20Systems;%3E%20Designing%20Systems%20to%20solve%20Real-World%20Problems" 
   width="100%"
-  style="filter: drop-shadow(0 0 6px #00FF9C) drop-shadow(0 0 12px #00FF9C);"
+  style="filter: drop-shadow(0 0 6px #00FFC6) drop-shadow(0 0 12px #00FFC6);"
 />
 <br/><br/>
 <br/><br/>
