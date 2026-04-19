@@ -1,4 +1,4 @@
-<div align="center">
+
 <img src="./banner.gif" width="100%" />
 <br/>
 
@@ -50,26 +50,9 @@
 ## 📊 GitHub Analytics
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=gauravmishraokok&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=818CF8&text_color=E2E8F0&ring_color=6366F1" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=gauravmishraokok&theme=radical&hide_border=true&background=0D1117&ring=6366F1&fire=818CF8&currStreakLabel=6366F1&sideLabels=E2E8F0&dates=94A3B8" width="49%" />
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gauravmishraokok&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&text_color=E2E8F0&langs_count=10" width="49%" />
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gauravmishraokok&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6366F1&line=818CF8&point=E2E8F0&area=true&area_color=6366F1" width="49%" />
-
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=gauravmishraokok&bg_color=020617&color=00FFC6&line=00FFC6&point=85FFC4&hide_border=true"/>
 </div>
 
----
-
-## 🌡️ Contribution Heatmap
-
-<div align="center">
-
-<img src="https://ghchart.rshah.org/6366F1/gauravmishraokok" alt="GitHub Contribution Heatmap" width="100%" />
-
-</div>
 
 ---
 
@@ -77,7 +60,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%"/>
+<img src="https://raw.githubusercontent.com/gauravmishraokok/gauravmishraokok/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" width="100%"/>
 
 </div>
 
