@@ -8,7 +8,6 @@
   style="filter: drop-shadow(0 0 6px #00FFC6) drop-shadow(0 0 12px #00FFC6);"
 />
 <br/><br/>
-<br/><br/>
 
 
 
@@ -95,13 +94,18 @@
 
 
 <!-- ======================= RESEARCH ======================= -->
-<div align="center" style="width:1000px; margin:auto; line-height:0;">
-  <!-- HEADER -->
-  <img src="assets/research-header.png" width="100%" style="display:block;" />
-  <!-- PAPERS -->
-  <img src="assets/ieee-paper.png" width="50%" style="display:inline-block;" />
-  <img src="assets/arxiv-paper.png" width="50%" style="display:inline-block;" />
-</div>
+<p align="center">
+  <img src="assets/research-header.png" width="100%" style="margin-bottom:20px;" />
+</p>
+
+<p align="center">
+  <a href="https://ieeexplore.ieee.org/document/10985323">
+    <img src="assets/ieee-paper.png" width="49%" />
+  </a>
+  <a href="https://arxiv.org/abs/2510.07557">
+    <img src="assets/arxiv-paper.png" width="49%" />
+  </a>
+</p>
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
 
