@@ -1,5 +1,5 @@
 <!-- ======================= HERO BANNER ======================= -->
-<img src="./banner.gif" width="100%" />
+<img src="assets/banner.gif" width="100%" />
 <br/>
 
 <img 
@@ -109,7 +109,7 @@
 
 <!-- ======================= WHAT DRIVES ME ======================= -->
 <div align="center">
-  <img src="whatdrivesme.png" width="100%" />
+  <img src="assets/whatdrivesme.gif" width="100%" />
 </div>
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00FFC6,100:003333&height=4&section=footer" width="100%"></div>
 
@@ -118,5 +118,5 @@
 
 <!-- ======================= END NOTE ======================= -->
 <div align="center">
-  <img src="endnote.png" width="100%" />
+  <img src="assets/endnote.png" width="100%" />
 </div>
