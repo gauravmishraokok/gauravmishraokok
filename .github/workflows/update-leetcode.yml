@@ -2,10 +2,9 @@ name: Update LeetCode SVG
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
-# Required to allow the bot to commit and push changes
 permissions:
   contents: write
 
@@ -29,5 +28,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/leetcode.svg
-          git diff --cached --quiet || git commit -m "chore: update leetcode svg"
-          git push
+          git diff --cached --quiet || (git commit -m "automated_chore: Update LeetCode SVG" && git push)
