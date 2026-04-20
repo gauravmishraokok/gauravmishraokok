@@ -149,8 +149,8 @@ async function main() {
 <rect x="10" y="10" width="980" height="440" class="box-outer" rx="6"/>
 <rect x="16" y="16" width="968" height="428" class="box-inner" rx="4"/>
 
-<text x="40" y="55" class="font primary title">LEETCODE SYSTEM</text>
-<text x="40" y="75" class="font secondary subtitle">Algorithmic Problem Solving Engine</text>
+<text x="40" y="55" class="font primary title">LEETCODE TRACKER</text>
+<text x="40" y="75" class="font secondary subtitle">LeetCode Stats for gauravmishraokok</text>
 
 <rect x="40" y="100" width="440" height="140" class="box-inner" rx="4"/>
 <text x="55" y="125" class="font primary section-label">PROBLEM SOLVING</text>
