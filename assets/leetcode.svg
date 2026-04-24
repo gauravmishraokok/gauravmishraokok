@@ -37,19 +37,19 @@
 
 <rect x="55" y="140" width="195" height="40" class="box-subtle" rx="2"/>
 <text x="65" y="165" class="font secondary stat-label">TOTAL</text>
-<text x="120" y="166" class="font tertiary stat-value">492</text>
+<text x="120" y="166" class="font tertiary stat-value">-</text>
 
 <rect x="265" y="140" width="195" height="40" class="box-subtle" rx="2"/>
 <text x="275" y="165" class="font secondary stat-label">EASY</text>
-<text x="320" y="166" class="font tertiary stat-value">171</text>
+<text x="320" y="166" class="font tertiary stat-value">-</text>
 
 <rect x="55" y="185" width="195" height="40" class="box-subtle" rx="2"/>
 <text x="65" y="210" class="font secondary stat-label">MEDIUM</text>
-<text x="120" y="211" class="font tertiary stat-value">275</text>
+<text x="120" y="211" class="font tertiary stat-value">-</text>
 
 <rect x="265" y="185" width="195" height="40" class="box-subtle" rx="2"/>
 <text x="275" y="210" class="font secondary stat-label">HARD</text>
-<text x="320" y="211" class="font tertiary stat-value">46</text>
+<text x="320" y="211" class="font tertiary stat-value">-</text>
 
 <rect x="520" y="100" width="440" height="140" class="box-inner" rx="4"/>
 <text x="535" y="125" class="font primary section-label">CONTEST METRICS</text>
