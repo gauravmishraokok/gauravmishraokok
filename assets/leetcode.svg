@@ -37,11 +37,11 @@
 
 <rect x="55" y="140" width="195" height="40" class="box-subtle" rx="2"/>
 <text x="65" y="165" class="font secondary stat-label">TOTAL</text>
-<text x="120" y="166" class="font tertiary stat-value">546</text>
+<text x="120" y="166" class="font tertiary stat-value">547</text>
 
 <rect x="265" y="140" width="195" height="40" class="box-subtle" rx="2"/>
 <text x="275" y="165" class="font secondary stat-label">EASY</text>
-<text x="320" y="166" class="font tertiary stat-value">188</text>
+<text x="320" y="166" class="font tertiary stat-value">189</text>
 
 <rect x="55" y="185" width="195" height="40" class="box-subtle" rx="2"/>
 <text x="65" y="210" class="font secondary stat-label">MEDIUM</text>
